@@ -1,0 +1,23 @@
+{
+    "signUp": "Regístrate",
+    "username": "Nombre de usuario",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "createAccount": "Crear cuenta",
+    "disclaimer": "Al registrarte, aceptas los",
+    "termsOfService": "Términos de servicio",
+    "and": "y",
+    "privacyPolicy": "Política de privacidad",
+    "alreadyHaveAnAccount": "¿Ya tienes una cuenta?",
+    "login": "Iniciar sesión",
+    "verifyEmail": "Verifica tu correo electrónico",
+    "verifyEmailMessage": "Hemos enviado con éxito la verificación a la dirección de correo electrónico que proporcionaste. Por favor, revisa tu bandeja de entrada o correo no deseado y sigue las instrucciones proporcionadas para completar el proceso de verificación.",
+    "verification": {
+        "title": "Odds73 | Verificar cuenta",
+        "description": "Verifica tu cuenta para comenzar a usar Odds73",
+        "message": "¡Gracias por registrarte! Por favor, haz clic en confirmar para verificar tu cuenta.",
+        "confirm": "Confirmar",
+        "successfully": "Tu cuenta ha sido verificada exitosamente. Ahora puedes iniciar sesión en tu cuenta."
+        }
+}

@@ -1,0 +1,23 @@
+{
+    "signUp": "Sign up",
+    "username": "Username",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "createAccount": "Create Account",
+    "disclaimer": "By signing up, you agree to the",
+    "termsOfService": "Terms of Service",
+    "and": "and",
+    "privacyPolicy": "Privacy Policy",
+    "alreadyHaveAnAccount": "Already have an account?",
+    "login": "Login",
+    "verifyEmail": "Verify your email",
+    "verifyEmailMessage": " We have successfully sent the verification to the email address you provided. Please check your inbox or spam folder and follow the instructions provided to complete the verification process.",
+    "verification": {
+        "title": "Odds73 | Verify Account",
+        "description": "Verify your account to start using Odds73",
+        "message": "Thank you for signing up! Please click the confirm to verify your account.",
+        "confirm": "Confirm",
+        "successfully": "Your account has been successfully verified. You can now login to your account."
+    }
+}

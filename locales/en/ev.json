@@ -1,0 +1,87 @@
+{
+    "evProPage": {
+        "title": "Odds73 | +EV bets",
+        "content": "+EV Bets",
+        "getEvButton": "Get +EV bets"
+    },
+    "evTable": {
+        "game": "Game",
+        "moneyLineBet": "Money Line Bet",
+        "bookmaker": "Bookmaker",
+        "betAmount": "Bet Amount",
+        "bankrollFraction": "Bankroll Fraction",
+        "winProbability": "Win Probability",
+        "track": "Track",
+        "gameStartsIn": "Game starts in",
+        "noResults": "Hmm... Nothing to see right now."
+    },
+    "betCalculator": {
+        "title": "Bet Calculator",
+        "suggestBetDetails": "Suggested Bet Details",
+        "outcome": "Outcome: ",
+        "price": "Price: ",
+        "trueLine": "True Line: ",
+        "winProbability": "Win Probability: ",
+        "betAmount": "Bet Amount: ",
+        "bankrollFraction": "Bankroll Fraction: ",
+        "evCalculator": "EV Calculator",
+        "bookmaker": "Bookmaker",
+        "bookmakerPrice": "Bookmaker Price",
+        "probability": "Probability",
+        "betAmountCalc": "Bet Amount",
+        "expectedValue": "Expected Value:",
+        "whatIsExpectedValue": "What is Expected Value?",
+        "expectedValueIs": "Positive expected value in sports betting refers to a bet that is predicted to be profitable over time.",
+        "bankrollExceedsError": " It looks like the amount you're trying to bet is more than what's available in your bankroll.",
+        "readMore": "Read more",
+        "cancel": "Cancel",
+        "track": "Track"
+    },
+    "trackMessage": {
+        "part1": "Adding",
+        "part2": "to your tracker"
+    },
+    "trackerPage": {
+        "title": "Odds73 | Tracker",
+        "content": "+EV Tracker"
+    },
+    "trackerTable": {
+        "manualBetBtn": "Create bet",
+        "sport": "Sport",
+        "details": "Details",
+        "amount": "Amount",
+        "status": "Status",
+        "edit": "Edit"
+    },
+    "trackerEditBet": {
+        "title": "+EV Bet",
+        "subtitle": "Bet Details",
+        "betDate": "Bet Date",
+        "savedManually": "Saved Manually",
+        "sport": "Sport",
+        "league": "League",
+        "team": "Team",
+        "bookmaker": "Bookmaker",
+        "betPrice": "Bet Price",
+        "trueLine": "Odds73 True Line",
+        "winProbability": "Win Probability",
+        "betAmount": "Bet Amount",
+        "bankrollFraction": "Bankroll Fraction",
+        "payout": "Payout",
+        "status": "Status",
+        "pending": "Pending",
+        "won": "Won",
+        "lost": "Lost",
+        "notes": "Notes",
+        "save": "Save",
+        "toastMessage": "Updating bet details",
+        "cancel": "Cancel"
+    },
+    "stats": {
+        "title": "Overview",
+        "stat1": "Completed Bets",
+        "stat2": "Payout",
+        "stat3": "Profit",
+        "stat4": "Return on Investment (ROI)"
+    }
+}

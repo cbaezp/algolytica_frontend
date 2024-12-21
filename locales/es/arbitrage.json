@@ -1,0 +1,78 @@
+{
+    "arbitragePage": {
+        "title": "Odds73 | Apuestas de arbitraje",
+        "description": "Apuestas de arbitraje",
+        "pageTitle": "Apuestas de arbitraje",
+        "arbitrageButton": "Obtener arbitraje"
+    },
+    "arbitrageTable": {
+        "game": "Juego",
+        "mlBet": "Precio de apuesta",
+        "bookmaker": "Casa de apuestas",
+        "betAmount": "Cantidad apostada",
+        "totalStake": "Apuesta total",
+        "profit": "Beneficio",
+        "save": "Guardar",
+        "calculator": "Calculadora",
+        "gameStarts": "El juego comienza en",
+        "track": "Guardar",
+        "noArbitrage": " Hmm... No hay nada que ver en este momento.",
+        "saveMessage": "Guardando tu apuesta"
+    },
+    "arbitrageCalculator": {
+        "title": "Calculadora de apuestas",
+        "description": "Calculadora de arbitraje",
+        "bookmaker": "Casa de apuestas",
+        "betPrice": "Precio de la apuesta",
+        "betAmount": "Cantidad apostada",
+        "totalStake": "Apuesta total",
+        "profit": "Beneficio",
+        "whatIsArbitrage": "¿Qué es el arbitraje?",
+        "arbitrageIs": "El arbitraje de apuestas deportivas es una forma de obtener beneficios apostando por diferentes resultados del mismo juego y aprovechando las diferentes cuotas ofrecidas por diferentes casas de apuestas.",
+        "saveMessage": "Guardando tu apuesta",
+        "cancel": "Cancelar",
+        "save": "Guardar"
+    },
+    "trackerArbitragePage": {
+        "title": "Odds73 | Seguimiento de arbitraje",
+        "description": "Realiza el seguimiento de tus apuestas de arbitraje.",
+        "pageTitle": "Seguimiento de arbitraje"
+    },
+    "trackerArbitrageTable": {
+        "button": "Crear apuesta",
+        "sport": "Deporte",
+        "game": "Juego",
+        "stake": "Apuesta",
+        "profit": "Beneficio",
+        "status": "Estado",
+        "edit": "Editar",
+        "gameDate": "Fecha del juego",
+        "pending": "Pendiente",
+        "completed": "Completada",
+        "saveMessage": "Guardando tu apuesta"
+    },
+    "trackerArbitrageEdit": {
+        "title": "Detalles de la apuesta",
+        "savedManually": "Guardado manualmente",
+        "date": "Fecha",
+        "sport": "Deporte",
+        "league": "Liga",
+        "outcome": "Resultado",
+        "betPrice": "Precio de la apuesta",
+        "bookmaker": "Casa de apuestas",
+        "betAmount": "Cantidad apostada",
+        "bookie": "Bookie",
+        "pending": "Pendiente",
+        "completed": "Completada",
+        "cancel": "Cancelar",
+        "save": "Guardar",
+        "updateMessage": "Actualizando tu apuesta"
+    },
+    "stats": {
+        "title": "Resumen",
+        "stat1": "Apuestas completadas",
+        "stat2": "Pago",
+        "stat3": "Beneficio",
+        "stat4": "Retorno de inversión (ROI)"
+    }
+}

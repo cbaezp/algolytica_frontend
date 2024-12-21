@@ -1,0 +1,25 @@
+{
+    "title": "Odds73 - Deja la suerte atrás, confía en los datos",
+    "Features": "Características",
+    "Pricing": "Precios",
+    "Articles": "Artículos",
+    "FAQ": "Preguntas frecuentes",
+    "Contact": "Contáctanos",
+    "Get Started": "Comenzar",
+    "Get Started word": "hoy",
+    "Register": "Registrarse",
+    "loggedNavBar": {
+        "dashboard": "Inicio",
+        "positiveEv": "+EV",
+        "arbitrage": "Arbitraje",
+        "blogs": "Blogs",
+        "tracker": "Seguimiento",
+        "trackerEvMobile": "Seguimiento +EV",
+        "trackerArbMobile": "Seguimiento arbitraje",
+        "trackerEv": "Obtén una lista de todas tus apuestas +EV, estadísticas y más.",
+        "trackerArb": "Obtén una lista de todas tus apuestas de arbitraje, estadísticas y más.",
+        "myAccount": "Mi cuenta",
+        "settings": "Configuración",
+        "logout": "Cerrar sesión"
+    }
+}

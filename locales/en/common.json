@@ -1,0 +1,24 @@
+{
+    "Features": "Features",
+    "Pricing": "Pricing",
+    "Articles": "Articles",
+    "FAQ": "FAQ",
+    "Contact": "Contact",
+    "Get Started": "Get Started",
+    "Get Started word": "today",
+    "Register": "Register",
+    "loggedNavBar": {
+        "dashboard": "Dashboard",
+        "positiveEv": "+EV",
+        "arbitrage": "Arbitrage",
+        "blogs": "Blogs",
+        "tracker": "Tracker",
+        "trackerEvMobile": "+EV Tracker",
+        "trackerArbMobile": "Arbitrage Tracker",
+        "trackerEv": "Get a list of all your +EV bets, stats and more.",
+        "trackerArb": "Get a list of all your Arbitrage bets, stats and more.",
+        "myAccount": "My Account",
+        "settings": "Settings",
+        "logout": "Logout"
+    }
+}

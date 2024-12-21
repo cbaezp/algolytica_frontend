@@ -1,0 +1,87 @@
+{
+    "evProPage": {
+        "title": "Odds73 | Apuestas +EV",
+        "content": "Apuestas +EV",
+        "getEvButton": "Obtener apuestas +EV"
+    },
+    "evTable": {
+        "game": "Juego",
+        "moneyLineBet": "Precio de apuesta",
+        "bookmaker": "Casa de apuestas",
+        "betAmount": "Cantidad apostada",
+        "bankrollFraction": "Fracción de banca",
+        "winProbability": "Probabilidad de ganar",
+        "track": "Guardar",
+        "gameStartsIn": "El juego comienza en",
+        "noResults": "Hmm... No hay nada que ver en este momento."
+    },
+    "betCalculator": {
+        "title": "Calculadora de apuestas",
+        "suggestBetDetails": "Detalles sugeridos de la apuesta",
+        "outcome": "Resultado: ",
+        "price": "Precio: ",
+        "trueLine": "Línea real: ",
+        "winProbability": "Probabilidad de ganar: ",
+        "betAmount": "Cantidad apostada: ",
+        "bankrollFraction": "Fracción de banca: ",
+        "evCalculator": "Calculadora EV",
+        "bookmaker": "Casa de apuestas",
+        "bookmakerPrice": "Precio de la casa de apuestas",
+        "probability": "Probabilidad",
+        "betAmountCalc": "Cantidad apostada",
+        "expectedValue": "Valor esperado:",
+        "whatIsExpectedValue": "¿Qué es el +EV?",
+        "expectedValueIs": "El valor EV positivo en las apuestas deportivas se refiere a una apuesta que se predice será rentable a largo plazo.",
+        "bankrollExceedsError": " Parece que la cantidad que intentas apostar es más de lo que está disponible en tu banca.",
+        "readMore": "Leer más",
+        "cancel": "Cancelar",
+        "track": "Guardar"
+    },
+    "trackMessage": {
+        "part1": "Agregando",
+        "part2": "a tu seguimiento"
+    },
+    "trackerPage": {
+        "title": "Odds73 | Seguimiento",
+        "content": "Seguimiento +EV"
+    },
+    "trackerTable": {
+        "manualBetBtn": "Crear apuesta",
+        "sport": "Deporte",
+        "details": "Detalles",
+        "amount": "Apuesta",
+        "status": "Estado",
+        "edit": "Editar"
+    },
+    "trackerEditBet": {
+        "title": "Apuesta +EV",
+        "subtitle": "Detalles de la apuesta",
+        "betDate": "Fecha de la apuesta",
+        "savedManually": "Guardado manualmente",
+        "sport": "Deporte",
+        "team": "Equipo",
+        "league": "Liga",
+        "bookmaker": "Casa de apuestas",
+        "betPrice": "Precio de la apuesta",
+        "trueLine": "Línea real de Odds73",
+        "winProbability": "Probabilidad de ganar",
+        "betAmount": "Cantidad apostada",
+        "bankrollFraction": "Fracción de banca",
+        "payout": "Pago",
+        "status": "Estado",
+        "pending": "Pendiente",
+        "won": "Ganada",
+        "lost": "Perdida",
+        "notes": "Notas",
+        "save": "Guardar",
+        "toastMessage": "Actualizando detalles de la apuesta",
+        "cancel": "Cancelar"
+    },
+    "stats": {
+        "title": "Resumen",
+        "stat1": "Apuestas completadas",
+        "stat2": "Pago",
+        "stat3": "Beneficio",
+        "stat4": "Retorno de inversión (ROI)"
+    }
+}

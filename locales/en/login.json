@@ -1,0 +1,17 @@
+{
+    "title": "Odds73 | Sing in",
+    "description": "Sign in page for Odds73",
+    "homeButton": "Home",
+    "formUsername": "Username",
+    "formPassword": "Password",
+    "formSubmit": "Sign in",
+    "incorrectUsernameOrPassword": "Incorrect username or password",
+    "dontHaveAnAccount": "Don't have an account?",
+    "registerNow": "Register now",
+    "forgotPasswordTitle": "Forgot password?",
+    "forgotPassword": "Forgot password?",
+    "resetPassword": "Reset password",
+    "resetPasswordDescription": "Type your username in the field below to receive a password reset link via email.",
+    "send": "Send",
+    "successMessage": "If the username you entered is valid, you will receive an email with a link to reset your password."
+}

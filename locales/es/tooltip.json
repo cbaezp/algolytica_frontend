@@ -1,0 +1,8 @@
+{
+    "oddsFormat": "Personaliza cómo se muestran las cuotas. Elige entre formatos decimal y americano. El formato decimal muestra ratios de pago potenciales (por ejemplo, 2.50), mientras que el formato americano utiliza números positivos (+200) o negativos (-150) para representar ganancias o cantidades apostadas. Selecciona tu formato preferido para una experiencia personalizada.",
+    "initialBankroll": "Este es el valor predeterminado para tu bankroll inicial cuando creas tu cuenta.",
+    "currentBankroll": "Tu bankroll actual representa los fondos totales que tienes actualmente, teniendo en cuenta tu bankroll inicial y las ganancias o pérdidas.",
+    "kellyFraction": "La fracción Kelly es un valor utilizado en apuestas sugeridas calculadas según el criterio de Kelly. Cuando se establece en un 50%, significa que recibirás el 50% de la apuesta Kelly sugerida predeterminada. El criterio de Kelly ayuda a determinar la porción óptima de tu bankroll para apostar en una determinada apuesta, considerando la probabilidad de ganar y el posible pago. Al ajustar la fracción Kelly, puedes personalizar la cantidad de apuesta sugerida para que se alinee con tu tolerancia al riesgo y estrategia de apuestas.",
+    "minWinProbability": "La probabilidad mínima de ganar es un umbral utilizado para apuestas +EV (valor esperado positivo) sugeridas en eventos con resultados binarios, donde el resultado puede ser una victoria o una derrota. Las sugerencias solo considerarán eventos que tengan una probabilidad de ganar igual o mayor que el mínimo especificado.",
+    "arbitrageDefaultBet": "El monto de apuesta predeterminado se divide entre los eventos recomendados para asegurar una apuesta equilibrada."
+}

@@ -1,0 +1,78 @@
+{
+    "arbitragePage": {
+        "title": "Odds73 | Arbitrage Bets",
+        "description": "Arbitrage bets",
+        "pageTitle": "Arbitrage bets",
+        "arbitrageButton": "Get Arbitrage"
+    },
+    "arbitrageTable": {
+        "game": "Game",
+        "mlBet": "Moneyline Bet",
+        "bookmaker": "Bookmaker",
+        "betAmount": "Bet Amount",
+        "totalStake": "Total Stake",
+        "profit": "Profit",
+        "save": "Save",
+        "calculator": "Calculator",
+        "gameStarts": "Game starts in",
+        "track": "Track",
+        "noArbitrage": " Hmm... Nothing to see right now.",
+        "saveMessage": "Saving your bet"
+    },
+    "arbitrageCalculator": {
+        "title": "Bet Calculator",
+        "description": "Arbitrage Calculator",
+        "bookmaker": "Bookmaker",
+        "betPrice": "Bet Price",
+        "betAmount": "Bet Amount",
+        "totalStake": "Total Stake",
+        "profit": "Profit",
+        "whatIsArbitrage": "What is arbitrage?",
+        "arbitrageIs": "Sports betting arbitrage is a way to make a profit by betting on different outcomes of the same game and taking advantage of different odds offered by different bookmakers.",
+        "saveMessage": "Saving your bet",
+        "cancel": "Cancel",
+        "save": "Save"
+    },
+    "trackerArbitragePage": {
+        "title": "Odds73 | Arbitrage Tracker",
+        "description": "Track your arbitrage bets.",
+        "pageTitle": "Arbitrage Tracker"
+    },
+    "trackerArbitrageTable": {
+        "button": "Create Bet",
+        "sport": "Sport",
+        "game": "Game",
+        "stake": "Stake",
+        "profit": "Profit",
+        "status": "Status",
+        "edit": "Edit",
+        "gameDate": "Game Date",
+        "pending": "Pending",
+        "completed": "Completed",
+        "saveMessage": "Saving your bet"
+    },
+    "trackerArbitrageEdit": {
+        "title": "Bet Details",
+        "savedManually": "Saved manually",
+        "date": "Date",
+        "sport": "Sport",
+        "league": "League",
+        "outcome": "Outcome",
+        "betPrice": "Bet Price",
+        "bookmaker": "Bookmaker",
+        "betAmount": "Bet Amount",
+        "bookie": "Bookie",
+        "pending": "Pending",
+        "completed": "Completed",
+        "cancel": "Cancel",
+        "save": "Save",
+        "updateMessage": "Updating your bet"
+    },
+    "stats": {
+        "title": "Overview",
+        "stat1": "Completed Bets",
+        "stat2": "Payout",
+        "stat3": "Profit",
+        "stat4": "Return on Investment (ROI)"
+    }
+}

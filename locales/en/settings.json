@@ -1,0 +1,17 @@
+{"title": "User Settings",
+ "subtitle": "Note: updating your initial bankroll will affect your current bankroll the next time you update a saved bet statatus.",
+ "language": "Language",
+ "oddsFormat": "Odds Format",
+ "initialBankroll": "Initial Bankroll",
+ "currentBankroll": "Current Bankroll",
+ "kellyFraction": "Kelly Fraction",
+ "minWinProb": "Minimum Win Probability",
+ "arbDefaultBet": "Default Arbitrage Bet",
+ "roundUpBets": "Round Up Bets",
+ "roundUpDescription": "Betting in even amounts can contribute to a smoother betting experience and reduce the likelihood of your bets being flagged as potential arbitrage or suspicious patterns.",
+ "useDynamicBankroll": "Use Dynamic Bankroll",
+ "useDynamicBankrollDes": "Your current bankroll is calculated by factoring in your initial bankroll and the net payouts from your completed bets. Your current bankroll: ",
+ "bookmakers": "Bookmakers",
+ "cancel": "Cancel",
+ "save": "Save"
+}

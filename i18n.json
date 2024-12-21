@@ -1,0 +1,53 @@
+{
+    "locales": [
+        "en",
+        "es"
+    ],
+    "defaultLocale": "en",
+    "pages": {
+        "*": [
+            "common"
+        ],
+        "/": [
+            "index"
+        ],
+        "/login": [
+            "login"
+        ],
+        "/register": [
+            "registration"
+        ],
+        "/register_pending": [
+            "registration"
+        ],
+        "/verify-registration": [
+            "registration"
+        ],
+        "/forgot-password": [
+            "login"
+        ],
+        "/dashboard": [
+            "dashboard",
+            "ev"
+        ],
+        "/ev-pro": [
+            "ev"
+        ],
+        "/tracker-ev": [
+            "ev"
+        ],
+        "/arbitrage-pro": [
+            "arbitrage"
+        ],
+        "/tracker-arbitrage": [
+            "arbitrage"
+        ],
+        "/settings": [
+            "tooltip",
+            "settings"
+        ],
+        "/subscribe": [
+            "subscribe"
+        ]
+    }
+}

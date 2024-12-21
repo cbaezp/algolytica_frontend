@@ -1,0 +1,8 @@
+{
+    "oddsFormat": "Customize how odds are displayed. Choose between decimal and American formats. Decimal format shows potential payout ratios (e.g., 2.50), while American format uses positive (+200) or negative (-150) numbers to represent profit or wager amounts. Select your preferred format for a personalized experience.",
+    "initialBankroll": "This is the default value for your starting bankroll when you create your account.",
+    "currentBankroll": "Your current bankroll represents the total funds you currently have, taking into account your initial bankroll and any wins or losses.",
+    "kellyFraction": "The Kelly fraction is a value used in suggested bets calculated based on the Kelly criterion. When set at 50%, it means you will receive 50% of the default suggested Kelly bet. The Kelly criterion helps determine the optimal portion of your bankroll to wager on a given bet, considering the probability of winning and the potential payoff. By adjusting the Kelly fraction, you can customize the suggested bet amount to align with your risk tolerance and betting strategy.",
+    "minWinProbability": "The minimum win probability is a threshold used for suggested +EV (positive expected value) bets in binary outcome events, where the outcome can be either a win or a loss. Suggestions will only consider events that have a win probability equal to or higher than the specified minimum.",
+    "arbitrageDefaultBet": "The default bet amount is split among the recommended events to ensure balanced wagering. "
+}

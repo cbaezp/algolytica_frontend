@@ -1,0 +1,28 @@
+{
+    "heroSection": {
+        "greeting": "¡Hola, ",
+        "title": "Información impulsada por datos.",
+        "subtitle": "Apuestas inteligentes.",
+        "reportTitle": "Informe de los últimos 30 días",
+        "report1": "Apuestas +EV completadas",
+        "report2": "ROI de las apuestas +EV",
+        "report3": "Apuestas de arbitraje completadas",
+        "report4": "ROI de las apuestas de arbitraje"
+    },
+    "tableSection": {
+        "title": "+EV | Próximos partidos"
+    },
+    "imageCards": {
+        "card": "+EV",
+        "card1": "Seguimiento +EV",
+        "card2": "Arbitraje",
+        "card3": "Seguimiento de arbitraje",
+        "card4": "Personalizar sugerencias"
+    },
+    "sportList": {
+        "paragraph": "Nos comprometemos a brindarte la mejor experiencia posible al expandir continuamente nuestra oferta con nuevos deportes, ligas y casas de apuestas.",
+        "button": "Lista de deportes",
+        "title": "Deportes",
+        "close": "Cerrar"
+    }
+}

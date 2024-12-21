@@ -1,0 +1,28 @@
+{
+    "heroSection": {
+        "greeting": "Hiya, ",
+        "title": "Data-driven insights.",
+        "subtitle": "Smarter Bets.",
+        "reportTitle": "30-day report",
+        "report1": "+EV completed bets",
+        "report2": "+EV bets ROI",
+        "report3": "Arbitrage completed bets",
+        "report4": "Arbitrage ROI"
+    },
+    "tableSection": {
+        "title": "+EV | Upocoming games"
+    },
+    "imageCards": {
+        "card": "+EV",
+        "card1": "+EV Tracker",
+        "card2": "Arbitrage",
+        "card3": "Arbitrage Tracker",
+        "card4": "Customize Suggestions"
+    },
+    "sportList": {
+        "paragraph": "We are committed to providing you with the best possible experience by continuously expanding our offering with new sports, leagues, and bookmakers.",
+        "button": "List of Sports",
+        "title": "Sports",
+        "close": "Close"
+    }
+}

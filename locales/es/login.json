@@ -1,0 +1,17 @@
+{
+    "title": "Odds73 | Iniciar sesión",
+    "description": "Página de inicio de sesión para Odds73",
+    "homeButton": "Inicio",
+    "formUsername": "Nombre de usuario",
+    "formPassword": "Contraseña",
+    "formSubmit": "Iniciar sesión",
+    "incorrectUsernameOrPassword": "Nombre de usuario o contraseña incorrectos",
+    "dontHaveAnAccount": "¿No tienes una cuenta?",
+    "registerNow": "Regístrate ahora",
+    "forgotPasswordTitle": "¿Olvidaste tu contraseña?",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "resetPassword": "Restablecer contraseña",
+    "resetPasswordDescription": "Ingresa tu nombre de usuario en el campo a continuación para recibir un enlace de restablecimiento de contraseña por correo electrónico.",
+    "send": "Enviar",
+    "successMessage": "Si el nombre de usuario que ingresaste es válido, recibirás un correo electrónico con un enlace para restablecer tu contraseña."
+}
