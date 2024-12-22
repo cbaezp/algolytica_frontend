@@ -15,7 +15,9 @@ import {
   SET_AUTH_LOADING,
   REMOVE_AUTH_LOADING,
   GITHUB_AUTH_FAIL,
-  GITHUB_AUTH_SUCCESS
+  GITHUB_AUTH_SUCCESS,
+  GOOGLE_AUTH_SUCCESS,
+  GOOGLE_AUTH_FAIL
 } from "./types";
 import Cookie from "js-cookie";
 import Router from "next/router";
@@ -245,8 +247,6 @@ export const githubAuth = (code) => async (dispatch) => {
     Cookie.set("access", access);
     Cookie.set("refresh", refresh || "");
     Cookie.set("user", JSON.stringify(user));
-
-    // Set isAuthenticated cookie
     Cookie.set("isAuthenticated", "true");
 
     // Dispatch GITHUB_AUTH_SUCCESS
@@ -273,11 +273,48 @@ export const githubAuth = (code) => async (dispatch) => {
 };
 
 
+// Google Auth
+
+export const googleAuth = (code) => async (dispatch) => {
+  try {
+    const res = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/dj-rest-auth/google/`, { code });
+    const { access, refresh, user } = res.data;
+
+    // Store tokens in cookies
+    Cookie.set('access', access);
+    Cookie.set('refresh', refresh || '');
+    Cookie.set('user', JSON.stringify(user));
+    Cookie.set('isAuthenticated', 'true');
+
+    dispatch({
+      type: GOOGLE_AUTH_SUCCESS,
+      payload: res.data,
+    });
+
+
+
+    dispatch({
+      type: LOGIN_SUCCESS, // Update Redux isAuthenticated state
+    });
+
+  } catch (err) {
+    dispatch({
+      type: GOOGLE_AUTH_FAIL,
+    });
+    Cookie.set('isAuthenticated', 'false');
+  }
+};
+
+
+
+
 const initialState = {
   isAuthenticated: false,
   githubAuthSuccess: false,
   githubAuthFail: false,
-  // other states
+  googleAuthSuccess: false,
+  googleAuthFail: false,
+
 };
 
 export default function auth(state = initialState, action) {
@@ -297,7 +334,24 @@ export default function auth(state = initialState, action) {
         githubAuthSuccess: false,
         githubAuthFail: true,
       };
+    case GOOGLE_AUTH_SUCCESS:
+
+
+      return {
+        ...state,
+        isAuthenticated: true,
+        googleAuthSuccess: true,
+        googleAuthFail: false,
+      };
+    case GOOGLE_AUTH_FAIL:
+      return {
+        ...state,
+        isAuthenticated: false,
+        googleAuthSuccess: false,
+        googleAuthFail: true,
+      };
     default:
       return state;
   }
 }
+

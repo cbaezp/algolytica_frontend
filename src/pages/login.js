@@ -3,7 +3,9 @@ import Layout from "../hocs/Layout";
 import { useSelector, useDispatch } from "react-redux";
 import { login } from "../actions/auth";
 import { githubAuth } from "../actions/auth"; // Import the GitHub auth action
-import { FaGithub } from "react-icons/fa"; // Import GitHub icon
+
+import { FaGithub, FaGoogle } from "react-icons/fa";
+
 
 import { useRouter } from "next/router";
 import PropagateLoader from "react-spinners/PropagateLoader";
@@ -64,6 +66,15 @@ const LoginPage = () => {
 
     // Redirect to GitHub OAuth URL
     window.location.href = `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}`;
+  };
+
+  // Handle Google login
+  const handleGoogleLogin = () => {
+    const clientId = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID;
+    const redirectUri = process.env.NEXT_PUBLIC_CALLBACK_URL_GOOGLE;
+    const scope = "openid email profile";
+
+    window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?redirect_uri=${redirectUri}&prompt=consent&response_type=code&client_id=${clientId}&scope=${scope}&access_type=offline`;
   };
 
   return (
@@ -133,36 +144,56 @@ const LoginPage = () => {
                   `${t("formSubmit")}`
                 )}
               </button>
+              <div className="mt-6 text-gray-300 text-xs text-center">
+                {t("dontHaveAnAccount")}{" "}
+                <Link
+                  className="text-cyan-500 hover:text-cyan-400"
+                  href="../register"
+                >
+                  {t("registerNow")}
+                </Link>
+                <div className="text-xs text-center mt-2">
+                  <p className="mr-1 inline">{t("forgotPassword")}</p>
+                  <Link
+                    href="/forgot-password"
+                    className="text-cyan-500 hover:text-cyan-400 inline"
+                  >
+                    {t("resetPassword")}
+                  </Link>
+                </div>
+              </div>
+
+              {/* Separator */}
+              <div className="flex items-center my-6">
+                <div className="w-full border-t border-gray-400"></div>
+                <p className="px-3 text-sm text-gray-300">or</p>
+                <div className="w-full border-t border-gray-400"></div>
+              </div>
+
+
+              {/* Social Login Section */}
+              <div className="w-full">
+                <button
+                  onClick={handleGoogleLogin}
+                  className="w-full flex items-center justify-center py-2 mt-4 rounded-xl bg-gray-800 text-white hover:bg-gray-700"
+                >
+                  <FaGoogle className="mr-2" />
+                  {t("loginWithGoogle")}
+                </button>
+                <button
+                  onClick={handleGitHubLogin}
+                  className="w-full flex items-center justify-center py-2 mt-4 rounded-xl bg-gray-800 text-white hover:bg-gray-700"
+                >
+                  <FaGithub className="mr-2" />
+                  {t("loginWithGitHub")}
+                </button>
+              </div>
             </form>
 
-            <button
-              onClick={handleGitHubLogin}
-              className="w-full flex items-center justify-center py-2 mt-4 rounded-xl bg-gray-800 text-white hover:bg-gray-700"
-            >
-              <FaGithub className="mr-2" />
-              {t("loginWithGitHub")}
-            </button>
 
 
-            <div className="mt-3 text-gray-300">
-              {t("dontHaveAnAccount")}{" "}
-              <Link
-                className=" text-cyan-500 hover:text-cyan-400"
-                href="../register"
-              >
-                {t("registerNow")}
-              </Link>
-              <div className="flex">
-                {" "}
-                <p className="mr-1">{t("forgotPassword")}</p>{" "}
-                <Link
-                  href="/forgot-password"
-                  className=" text-cyan-500 hover:text-cyan-400"
-                >
-                  {t("resetPassword")}
-                </Link>
-              </div>
-            </div>
+
+
           </div>
         </div>
       </Layout>

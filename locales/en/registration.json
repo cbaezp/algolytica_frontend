@@ -19,5 +19,7 @@
         "message": "Thank you for signing up! Please click the confirm to verify your account.",
         "confirm": "Confirm",
         "successfully": "Your account has been successfully verified. You can now login to your account."
-    }
+    },
+    "signUpWithGoogle": "Sign up with Google",
+    "signUpWithGitHub": "Sign up with GitHub"
 }

@@ -6,6 +6,7 @@ import Loader from "react-loader-spinner";
 import { useRouter } from "next/router";
 import { InboxArrowDownIcon } from "@heroicons/react/20/solid";
 import { FaGithub } from 'react-icons/fa';
+import { FaGoogle } from 'react-icons/fa';
 
 import Link from "next/link";
 import Image from "next/image";
@@ -161,6 +162,7 @@ const RegisterPage = () => {
                 </ul>
               )}
 
+
               <button
                 type="submit"
                 className="w-full text-center py-2 rounded-xl bg-cyan-500 text-white hover:bg-green-dark focus:outline-none hover:bg-white hover:text-cyan-500 mt-6 disabled:bg-[#0f131f] disabled:text-gray-800"
@@ -168,23 +170,71 @@ const RegisterPage = () => {
                 {t("createAccount")}
               </button>
 
-              <div className="text-center text-sm text-gray-300 mt-4">
-                {t("disclaimer")}
+
+              <div className="text-center text-xs text-gray-400 mt-7">
+                {t("alreadyHaveAnAccount")}
                 <span> </span>
                 <Link
                   className="no-underline border-b border-grey-dark text-gray-400 hover:text-cyan-500"
+                  href="../login/"
+                >
+                  {t("login")}
+                </Link>
+              </div>
+
+
+
+              {/* Separator */}
+              <div className="flex items-center my-6">
+                <div className="w-full border-t border-gray-400"></div>
+                <p className="px-3 text-sm text-gray-300">or</p>
+                <div className="w-full border-t border-gray-400"></div>
+              </div>
+
+              <button
+                type="button"
+                className="w-full flex items-center justify-center py-2 mt-4 rounded-xl bg-gray-800 text-white hover:bg-gray-700"
+                onClick={() => {
+                  window.location.href = `https://github.com/login/oauth/authorize?client_id=${process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID}&redirect_uri=${process.env.NEXT_PUBLIC_GITHUB_URI_REDIRECT}&scope=user:email`;
+                }}
+              >
+                <FaGithub className="mr-2" />
+                {t('signUpWithGitHub')}
+              </button>
+              <button
+                type="button"
+                className="w-full flex items-center justify-center py-2 mt-4 rounded-xl bg-gray-800 text-white hover:bg-gray-700"
+                onClick={() => {
+                  const redirectUri = process.env.NEXT_PUBLIC_CALLBACK_URL_GOOGLE;
+                  const clientId = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID;
+                  const scope = 'openid email profile';
+                  const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?redirect_uri=${redirectUri}&prompt=consent&response_type=code&client_id=${clientId}&scope=${scope}&access_type=offline`;
+                  window.location.href = authUrl;
+                }}
+              >
+                <FaGoogle className="mr-2" />
+                {t('signUpWithGoogle')}
+              </button>
+
+
+              {/* disclaimer */}
+              <div className="text-center text-xs text-gray-300 mt-4">
+                {t("disclaimer")}
+                <span> </span>
+                <Link
+                  className="text-gray-400 hover:text-cyan-500"
                   href="/refund"
                 >
-                  Refund Policy{" "}
+                  Refund Policy{", "}
                 </Link>
                 <Link
-                  className="no-underline border-b border-grey-dark text-gray-400 hover:text-cyan-500"
+                  className="border-grey-dark text-gray-400 hover:text-cyan-500"
                   href="/terms"
                 >
                   {t("termsOfService")} {t("and")}
                 </Link>{" "}
                 <Link
-                  className="no-underline border-b border-grey-dark text-gray-400 hover:text-cyan-500"
+                  className="text-gray-400 hover:text-cyan-500"
                   href="/privacy"
                 >
                   {t("privacyPolicy")}
@@ -192,27 +242,9 @@ const RegisterPage = () => {
               </div>
             </form>
 
-            <button
-              type="button"
-              className="w-full flex items-center justify-center py-2 mt-4 rounded-xl bg-gray-800 text-white hover:bg-gray-700"
-              onClick={() => {
-                window.location.href = `https://github.com/login/oauth/authorize?client_id=${process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID}&redirect_uri=${process.env.NEXT_PUBLIC_GITHUB_URI_REDIRECT}&scope=user:email`;
-              }}
-            >
-              <FaGithub className="mr-2" />
-              {t('signUpWithGitHub')}
-            </button>
 
-            <div className="text-center text-sm text-gray-400 mt-4">
-              {t("alreadyHaveAnAccount")}
-              <span> </span>
-              <Link
-                className="no-underline border-b border-grey-dark text-gray-400 hover:text-cyan-500"
-                href="../login/"
-              >
-                {t("login")}
-              </Link>
-            </div>
+
+
           </div>
         )}
       </div>

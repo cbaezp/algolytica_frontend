@@ -13,5 +13,7 @@
     "resetPassword": "Restablecer contraseña",
     "resetPasswordDescription": "Ingresa tu nombre de usuario en el campo a continuación para recibir un enlace de restablecimiento de contraseña por correo electrónico.",
     "send": "Enviar",
-    "successMessage": "Si el nombre de usuario que ingresaste es válido, recibirás un correo electrónico con un enlace para restablecer tu contraseña."
+    "successMessage": "Si el nombre de usuario que ingresaste es válido, recibirás un correo electrónico con un enlace para restablecer tu contraseña.",
+    "loginWithGoogle": "Inice sesión con Google",
+    "loginWithGitHub": "Inice sesión con GitHub"
 }

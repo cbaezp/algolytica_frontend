@@ -19,5 +19,7 @@
         "message": "¡Gracias por registrarte! Por favor, haz clic en confirmar para verificar tu cuenta.",
         "confirm": "Confirmar",
         "successfully": "Tu cuenta ha sido verificada exitosamente. Ahora puedes iniciar sesión en tu cuenta."
-        }
+    },
+    "signUpWithGoogle": "Registrate con Google",
+    "signUpWithGitHub": "Registrate con GitHub"
 }
