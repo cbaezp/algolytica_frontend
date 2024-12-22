@@ -115,9 +115,9 @@ export default function Footer() {
         />
         <p className="mt-10 text-center text-xs leading-5 text-gray-500">
           This website is exclusively intended for entertainment purposes and
-          does not facilitate any form of actual monetary wagering. Odds73.com
+          does not facilitate any form of actual monetary wagering. Algolytica.com
           does not engage in the acceptance or placement of bets and is not a
-          gambling platform. &copy; 2024 Odds73. All rights reserved.
+          gambling platform. &copy; 2024 Algolytica. All rights reserved.
         </p>
       </div>
     </footer>

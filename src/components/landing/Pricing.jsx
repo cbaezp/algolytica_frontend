@@ -77,7 +77,7 @@ function Plan({
       </h3>
       <p
         className={clsx(
-          "mt-2 text-base",
+          "mt-2 text-base text-center",
           featured ? "text-white" : "text-slate-200"
         )}
       >
@@ -141,8 +141,8 @@ export function Pricing() {
         <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-2 xl:mx-0 xl:gap-x-8">
           <Plan
             name={t("planName")}
-            price="$9"
-            price2=".99"
+            price="$0"
+            price2=".00"
             frequency={t("monthly")}
             description={t("planDescription")}
             href="/register"
@@ -159,8 +159,8 @@ export function Pricing() {
           <Plan
             featured
             name={t("planName")}
-            price="$99"
-            price2=""
+            price="$0"
+            price2=".00"
             frequency={t("yearly")}
             description={t("planDescription2")}
             href="/register"
