@@ -33,14 +33,14 @@ export default async (req, res) => {
           cookie.serialize("access", data.access, {
             httpOnly: true,
             secure: process.env.NODE_ENV !== "development",
-            maxAge: 60 * 720,
+            maxAge: 15 * 60, // 15 minutes in seconds
             sameSite: "strict",
             path: "/api/",
           }),
           cookie.serialize("refresh", data.refresh, {
             httpOnly: true,
             secure: process.env.NODE_ENV !== "development",
-            maxAge: 60 * 60 * 24,
+            maxAge: 7 * 24 * 60 * 60, // 7 days in seconds
             sameSite: "strict",
             path: "/api/",
           }),

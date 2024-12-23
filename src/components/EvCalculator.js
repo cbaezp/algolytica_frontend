@@ -7,7 +7,7 @@ import { delay } from "./functions/modals";
 import Accordion from "./calculator/Accordion";
 import BetDetails from "./calculator/BetDetails";
 import useTranslation from "next-translate/useTranslation";
-
+import { formatBookieName } from '../components/functions/formatBookieName';
 //toast notifications
 
 import { ToastContainer, toast } from "react-toastify";
@@ -171,9 +171,8 @@ export default function EvCalculatorPro({
 
     let saveDetails = {
       recommendation: "Positive EV",
-      notes: `Modified bet. Original suggested bookie price: ${
-        Object.values(game.bet_details[0])[0]
-      }`,
+      notes: `Modified bet. Original suggested bookie price: ${Object.values(game.bet_details[0])[0]
+        }`,
       game_date: `${game.game_time}`,
       sport_league: game.sport_key,
       bookie: bookie,

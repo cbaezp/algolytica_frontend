@@ -11,6 +11,7 @@ import useUserSettings from "../hooks/useUserSettings";
 import useAmericanOdds from "../hooks/useAmericanOdds";
 import { thousandsSeparators } from "./trackerEv/CalcFunc";
 import useTranslation from "next-translate/useTranslation";
+import { formatBookieName } from '../components/functions/formatBookieName';
 
 export default function ProEvTable({ response, dasboardTable = false }) {
   const { t } = useTranslation("ev");
@@ -176,7 +177,8 @@ export default function ProEvTable({ response, dasboardTable = false }) {
                                 : Object.values(bet)[0]}
                             </td>
                             <td className="px-4 text-right text-gray-200 bg-[#0f131f]/90">
-                              {bet.from}
+                              {formatBookieName(bet?.from) || "Unknown"}
+
                             </td>
                             <td className="px-4 text-right text-gray-200 bg-[#0f131f]/90">
                               ${thousandsSeparators(
@@ -330,7 +332,8 @@ export default function ProEvTable({ response, dasboardTable = false }) {
                                     : Object.values(bet)[0]}
                                 </td>
                                 <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-300">
-                                  {bet.from}
+                                  {formatBookieName(bet?.from) || "Unknown"}
+
                                 </td>
 
                                 <td className="whitespace-nowrap px-8 py-4 text-sm text-gray-300">
