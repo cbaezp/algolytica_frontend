@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg id="Layer_1" data-name="Layer 1"
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" stroke="#D3D3D3" stroke-width="2">
     <title>rugby ball</title>
     <path d="M34.83,39.83a5,5,0,0,1-3.54-1.47h0l-5.65-5.65a5,5,0,0,1,7.07-7.07l5.65,5.65a5,5,0,0,1,0,7.07A5,5,0,0,1,34.83,39.83Z"/>
     <path d="M32.71,37A3,3,0,0,0,37,32.71l-5.66-5.66a3,3,0,0,0-4.24,4.24Z"/>
