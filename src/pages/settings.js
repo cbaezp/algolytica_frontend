@@ -124,7 +124,7 @@ export default function Settings() {
 
     } catch (err) {
       return err;
-      console.error(err);
+
     }
   };
   // Get active bookies
@@ -140,9 +140,7 @@ export default function Settings() {
 
       setActiveBookies(Object.values(data)[0]);
 
-      console.log(Object.values(data)[0]);
     } catch (err) {
-      console.error(err);
 
       return err;
     }
@@ -180,7 +178,7 @@ export default function Settings() {
         setSaveSettings(true);
       }
     } catch (err) {
-      console.log(error);
+
 
       return err;
     }
@@ -785,64 +783,81 @@ export default function Settings() {
                     <div className="px-7">
                       {/* Bookies */}
                       <fieldset>
-                        <legend className="text-lg font-medium text-gray-300">
-                          Bookies
-                        </legend>
-                        <div className="mt-4 divide-y divide-cyan-500/50 border-t border-b border-cyan-500/60">
-                          {activeBookies.map((bookie, bookieIdx) => (
-                            <div
-                              key={bookieIdx}
-                              className="relative flex items-start py-4"
-                            >
-                              <div className="min-w-0 flex-1 text-sm">
-                                <label
-                                  htmlFor={`bookie-${bookie.id}`}
-                                  className="select-none font-medium text-gray-300"
-                                >
-                                  {bookie.display_name}
-                                </label>
+                        <legend className="text-lg font-medium text-gray-300">Bookmakers</legend>
+                        <div className="my-4 divide-y divide-cyan-500/50 border-t border-b border-cyan-500/60">
+                          {activeBookies && activeBookies.length > 0 ? (
+                            Object.entries(
+                              activeBookies.reduce((acc, bookie) => {
+                                const region = bookie?.region?.[0]?.name || "Unknown Region";
+                                if (!acc[region]) {
+                                  acc[region] = [];
+                                }
+                                acc[region].push(bookie);
+                                return acc;
+                              }, {})
+                            ).map(([region, bookies]) => (
+                              <div key={region} className="my-4">
+                                <h3 className="text-md font-semibold text-gray-300 my-4">{region}</h3>
+                                <div className="mt-2">
+                                  {bookies.map((bookie) => (
+                                    <div
+                                      key={bookie.id}
+                                      className="relative flex items-start py-4"
+                                    >
+                                      <div className="min-w-0 flex-1 text-sm">
+                                        <label
+                                          htmlFor={`bookie-${bookie.id}`}
+                                          className="select-none font-medium text-gray-400"
+                                        >
+                                          {bookie.display_name}
+                                        </label>
+                                      </div>
+                                      <div className="ml-3 flex h-5 items-center">
+                                        <input
+                                          id={`bookie-${bookie.id}`}
+                                          name={`bookie-${bookie.id}`}
+                                          type="checkbox"
+                                          checked={
+                                            Array.isArray(selectedBookies)
+                                              ? selectedBookies.includes(bookie.id)
+                                              : typeof selectedBookies === "object" &&
+                                              Object.values(selectedBookies).includes(bookie.id)
+                                          }
+                                          onChange={(e) => {
+                                            if (
+                                              (selectedBookies &&
+                                                Array.isArray(selectedBookies)) ||
+                                              typeof selectedBookies === "object"
+                                            ) {
+                                              if (e.target.checked) {
+                                                setSelectedBookies([
+                                                  ...selectedBookies,
+                                                  bookie.id,
+                                                ]);
+                                              } else {
+                                                setSelectedBookies(
+                                                  selectedBookies.filter(
+                                                    (item) => item !== bookie.id
+                                                  )
+                                                );
+                                              }
+                                            }
+                                          }}
+                                          className="form-checkbox h-4 w-4 text-cyan-600 transition duration-150 ease-in-out"
+                                        />
+                                      </div>
+                                    </div>
+                                  ))}
+                                </div>
                               </div>
-                              <div className="ml-3 flex h-5 items-center">
-                                <input
-                                  id={`bookie-${bookie.id}`}
-                                  name={`bookie-${bookie.id}`}
-                                  type="checkbox"
-                                  checked={
-                                    Array.isArray(selectedBookies)
-                                      ? selectedBookies.includes(bookie.id)
-                                      : typeof selectedBookies === "object" &&
-                                      Object.values(selectedBookies).includes(
-                                        bookie.id
-                                      )
-                                  }
-                                  onChange={(e) => {
-                                    if (
-                                      (selectedBookies &&
-                                        Array.isArray(selectedBookies)) ||
-                                      typeof selectedBookies === "object"
-                                    ) {
-                                      if (e.target.checked) {
-                                        setSelectedBookies([
-                                          ...selectedBookies,
-                                          bookie.id,
-                                        ]);
-                                      } else {
-                                        setSelectedBookies(
-                                          selectedBookies.filter(
-                                            (item) => item !== bookie.id
-                                          )
-                                        );
-                                      }
-                                    }
-                                  }}
-                                  className="form-checkbox h-4 w-4 text-cyan-600 transition duration-150 ease-in-out"
-                                />
-                              </div>
-                            </div>
-                          ))}
+                            ))
+                          ) : (
+                            <p className="text-gray-400">Loading bookies...</p>
+                          )}
                         </div>
                       </fieldset>
                     </div>
+
 
                     <div className="mt-4 flex justify-end py-4 px-4 sm:px-6">
                       <Link href={"/dashboard"}>
