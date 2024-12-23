@@ -1,6 +1,6 @@
 {
     "arbitragePage": {
-        "title": "Odds73 | Arbitrage Bets",
+        "title": "Algolytica | Arbitrage Bets",
         "description": "Arbitrage bets",
         "pageTitle": "Arbitrage bets",
         "arbitrageButton": "Get Arbitrage"
@@ -34,7 +34,7 @@
         "save": "Save"
     },
     "trackerArbitragePage": {
-        "title": "Odds73 | Arbitrage Tracker",
+        "title": "Algolytica | Arbitrage Tracker",
         "description": "Track your arbitrage bets.",
         "pageTitle": "Arbitrage Tracker"
     },

@@ -103,7 +103,7 @@ const NavbarLogged = () => {
                       height="0"
                       sizes="100vw"
                       className="w h-auto"
-                      alt={"logo-odds73"}
+                      alt={"logo-Algolytica"}
                     />
                   </div>
                   <div className="hidden md:block">

@@ -24,7 +24,7 @@ const Layout = ({ title, content, children }) => {
 };
 
 Layout.defaultProps = {
-  title: "Odds73",
+  title: "Algolytica",
   content: "Get an edge.",
 };
 export default Layout;

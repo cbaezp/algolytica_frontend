@@ -19,14 +19,14 @@ export default async (req, res) => {
       port: 465,
       secure: true,
       auth: {
-        user: "contact@odds73.com",
+        user: "contact@Algolytica.com",
         pass: process.env.CONTACT_PASS,
       },
     });
 
     const mailOptions = {
-      from: "contact@odds73.com",
-      to: "support@odds73.com",
+      from: "contact@Algolytica.com",
+      to: "support@Algolytica.com",
       replyTo: email,
       subject: subject,
       html: `

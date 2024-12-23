@@ -47,7 +47,7 @@ const LayoutLogged = ({ title, content, children, custom }) => {
 };
 
 LayoutLogged.defaultProps = {
-  title: "Odds73",
+  title: "Algolytica",
   content: "Get an edge",
 };
 export default LayoutLogged;

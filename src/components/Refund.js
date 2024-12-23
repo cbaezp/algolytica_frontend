@@ -11,7 +11,7 @@ export default function Terms() {
           1. Refund Eligibility
         </h2>
         <p class="text-gray-700 mb-6">
-          Odds73 LLC Virginia offers a refund for its monthly subscription
+          Algolytica LLC Virginia offers a refund for its monthly subscription
           services, subject to the following conditions:
         </p>
 
@@ -31,7 +31,7 @@ export default function Terms() {
         </h2>
         <p class="text-gray-700 mb-6">
           To request a refund, you must contact our customer support team within
-          the specified 24-hour period. You can reach us at refunds@odds73.com.
+          the specified 24-hour period. You can reach us at refunds@Algolytica.com.
           Please provide the following information in your refund request:
         </p>
 
@@ -63,7 +63,7 @@ export default function Terms() {
           If a chargeback or dispute is initiated through your payment provider
           (e.g., credit card company), your account may be temporarily or
           permanently suspended until the matter is resolved. Any fees or costs
-          incurred by Odds73 LLC Virginia as a result of a chargeback or dispute
+          incurred by Algolytica LLC Virginia as a result of a chargeback or dispute
           may be deducted from your account balance.
         </p>
 
@@ -71,7 +71,7 @@ export default function Terms() {
 
         <p class="text-gray-700 mb-6">
           If you have any questions or concerns about our refund policy, please
-          contact our customer support team at refunds@odds73.com.
+          contact our customer support team at refunds@Algolytica.com.
         </p>
       </div>
     </div>

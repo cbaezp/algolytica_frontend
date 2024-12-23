@@ -14,10 +14,10 @@ export default function Privacy() {
           1. Commitment to Privacy
         </h3>
         <p className="mt-2 text-gray-900">
-          To ensure the quality of your experience, Odds73 LLC Virginia collects
+          To ensure the quality of your experience, Algolytica LLC Virginia collects
           and processes information about our users. We are committed to
           handling that information with respect, because your privacy is very
-          important to us. Odds73 LLC Virginia ("Odds73," "we," "us," or "our")
+          important to us. Algolytica LLC Virginia ("Algolytica," "we," "us," or "our")
           has prepared this notice to explain how we collect, use, and share
           information from users of our website and Apps. This notice does not
           apply to websites, applications, or services that do not display or
@@ -399,7 +399,7 @@ export default function Privacy() {
             necessary (i) to comply with relevant laws or to respond to
             discovery requests, subpoenas, or warrants served on us; (ii) in
             connection with any legal investigation; (iii) to protect or defend
-            the rights or property of Odds73 or users of the Website or App;
+            the rights or property of Algolytica or users of the Website or App;
             (iv) to investigate or assist in preventing any violation or
             potential violation of law, this notice, or our Terms of Use; or (v)
             if we believe that an emergency involving the danger of death or
@@ -454,7 +454,7 @@ export default function Privacy() {
             to you. At any time you can easily indicate your preference to stop
             receiving such communications from us, and you may opt out of
             receiving further marketing from us, by emailing us at{" "}
-            <a href="mailto:help@odds73.com">help@odds73.com</a> or by following
+            <a href="mailto:help@Algolytica.com">help@Algolytica.com</a> or by following
             the unsubscribe instructions provided in the email you receive.
             Despite your indicated email preferences, we may send you
             service-related communications, including notices of any updates to
@@ -464,7 +464,7 @@ export default function Privacy() {
             Changing or Deleting Your Personal Information. You may change any
             of your personal information in your Account by simply editing it
             within your Account or by requesting changes by emailing us at{" "}
-            <a href="mailto:help@odds73.com">help@odds73.com</a>. You may
+            <a href="mailto:help@Algolytica.com">help@Algolytica.com</a>. You may
             request deletion of certain personal information maintained by us,
             and we will use commercially reasonable efforts to honor your
             request, but please note that we may be legally or otherwise
@@ -472,7 +472,7 @@ export default function Privacy() {
             information for a certain time, in which case we will comply with
             your deletion request only after we have fulfilled such
             requirements). Deletion requests may be made by emailing us at{" "}
-            <a href="mailto:help@odds73.com">help@odds73.com</a>. When we delete
+            <a href="mailto:help@Algolytica.com">help@Algolytica.com</a>. When we delete
             information, it will be deleted from the active database, but may
             remain in our archives. We may also retain your information to
             prevent fraud or other unlawful activity or for similar purposes.
@@ -492,10 +492,10 @@ export default function Privacy() {
         <p className=" text-gray-900 mt-2">
           You may request a copy of personal information that we have collected
           about you by emailing our privacy team via email addressed to{" "}
-          <a href="mailto:help@odds73.com">help@odds73.com</a>. You may also
+          <a href="mailto:help@Algolytica.com">help@Algolytica.com</a>. You may also
           request that we correct any factual inaccuracies in your personal
           information by contacting{" "}
-          <a href="mailto:help@odds73.com">help@odds73.com</a>.
+          <a href="mailto:help@Algolytica.com">help@Algolytica.com</a>.
         </p>
 
         <h3 className=" text-gray-900 text-xl font-semibold mt-6">
@@ -530,7 +530,7 @@ export default function Privacy() {
           delete the information from our files. If you are the parent or legal
           guardian of a child under 18 who you believe has provided personal
           information to us through the Website or App, please contact our
-          privacy team at help@odds73.com.
+          privacy team at help@Algolytica.com.
         </p>
 
         <h3 className=" text-gray-900 text-xl font-semibold mt-6">
@@ -681,7 +681,7 @@ export default function Privacy() {
         </h2>
 
         <p class="mt-2">
-          You may submit a request by emailing us at help@odds73.com . Please
+          You may submit a request by emailing us at help@Algolytica.com . Please
           note that we may deny or fulfill a request only in part, based on our
           legal rights and obligations. Please also note that, except as
           otherwise provided by applicable California law, for purposes of these
@@ -754,8 +754,8 @@ export default function Privacy() {
           marketing purposes. If you wish to opt-out of sharing your personal
           information with third parties for their direct marketing purposes,
           please email us at{" "}
-          <a href="mailto:help@odds73.com" class="text-blue-500 underline">
-            help@odds73.com
+          <a href="mailto:help@Algolytica.com" class="text-blue-500 underline">
+            help@Algolytica.com
           </a>{" "}
           and describe your request as "Re:Opt-out".
         </p>
@@ -767,7 +767,7 @@ export default function Privacy() {
           Any inquiries or comments regarding your personal information and
           privacy rights, our data privacy practices, this privacy notice, or
           any reports regarding suspected or actual security violations should
-          be directed to our privacy team via email at help@odds73.com.{" "}
+          be directed to our privacy team via email at help@Algolytica.com.{" "}
         </p>
 
         <h3 className=" text-gray-900 text-xl font-semibold mt-6">

@@ -59,21 +59,21 @@ function SignUpConfirmation() {
 
   return (
     <Layout
-      title="Odds73 | Verify Account"
-      content="Verify your Odds 73 account"
+      title="Algolytica | Verify Account"
+      content="Verify your Algolytica account"
     >
       <div className="min-h-screen flex flex-col relative bg-gradient-to-t from-cyan-900 via-sky-900 to-[#0f131f]">
-       
-          <div className="flex flex-col items-center mt-8">
 
-            <p className="text-gray-200 ">{t("verification.successfully")}</p>
-            <Link
-              href="/login"
-              className="mt-2 border border-cyan-400 p-2 rounded-md text-gray-200 text-sm hover:bg-cyan-500 hover:text-white"
-            >
-              Login
-            </Link>
-          </div>
+        <div className="flex flex-col items-center mt-8">
+
+          <p className="text-gray-200 ">{t("verification.successfully")}</p>
+          <Link
+            href="/login"
+            className="mt-2 border border-cyan-400 p-2 rounded-md text-gray-200 text-sm hover:bg-cyan-500 hover:text-white"
+          >
+            Login
+          </Link>
+        </div>
 
       </div>
     </Layout>

@@ -44,7 +44,7 @@ export default function MainDashboard() {
 
   return (
     <>
-      <LayoutLogged title={"Home | Odds73"} content={"Get an edge."}>
+      <LayoutLogged title={"Home | Algolytica"} content={"Get an edge."}>
         {
           <>
             <StatsWithImage username={user} />

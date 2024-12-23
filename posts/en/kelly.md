@@ -1,7 +1,7 @@
 ---
 title: "What is the Kelly Criterion?"
 description: "The Kelly Criterion is a mathematical formula that helps bettors determine the optimal amount to stake on a bet."
-author: "Odds73 Team"
+author: "Algolytica Team"
 category: "Kelly Criterion"
 date: "2023-08-15"
 bannerImage: "https://images.unsplash.com/photo-1519611103964-90f61a50d3e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1168&q=80"

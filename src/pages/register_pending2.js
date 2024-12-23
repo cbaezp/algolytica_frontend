@@ -18,7 +18,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 
-const navigation = [{ name: "Home", href: "http://odds73.com" }];
+const navigation = [{ name: "Home", href: "http://Algolytica.com" }];
 const SimpleForm = () => <MailchimpSubscribe url={url} />;
 
 const url =
@@ -82,7 +82,7 @@ export default function Register() {
             <div className="flex flex-1 items-center">
               <div className="flex w-full items-center justify-between md:w-auto">
                 <a href="#">
-                  <span className="sr-only">Odds 73</span>
+                  <span className="sr-only">Algolytica</span>
                   <Image
                     src={"/images/73-c4.svg"}
                     width="0"

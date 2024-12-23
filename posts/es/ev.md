@@ -1,7 +1,7 @@
 ---
 title: "Valor Esperado Positivo (EV) en las Apuestas"
 description: "El Valor Esperado Positivo (EV) en las apuestas deportivas, es una medida para determinar la valía de una apuesta."
-author: "Equipo de Odds73"
+author: "Equipo de Algolytica"
 category: "EV Positivo"
 date: "2023-07-18"
 bannerImage: "https://images.unsplash.com/photo-1519611103964-90f61a50d3e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1168&q=80"

@@ -43,7 +43,7 @@ const App = ({ Component, pageProps, router }) => {
         }}
       />
       <Head>
-        <title>Odds73</title>
+        <title>Algolytica</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <ProtectedRoutes router={router}>

@@ -32,7 +32,7 @@ function ForgotPassword() {
 
   return (
     <>
-      <Layout title="Odds73 | Account" content="Verify your Odds 73 account">
+      <Layout title="Algolytica | Account" content="Verify your Algolytica account">
         <div className="min-h-screen flex flex-col relative bg-gradient-to-t from-cyan-900 via-sky-900 to-[#0f131f]">
           {successfullyVerified ? (
             <div className="flex flex-col items-center mt-8">

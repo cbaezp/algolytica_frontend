@@ -30,7 +30,7 @@ const Dashboard = ({ title, content, dashboard_name, children }) => {
 };
 
 Dashboard.defaultProps = {
-  title: "Odds73",
+  title: "Algolytica",
   content: "Be the house",
   dashboard_name: "Dashboard",
 };

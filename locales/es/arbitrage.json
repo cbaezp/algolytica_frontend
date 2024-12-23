@@ -1,6 +1,6 @@
 {
     "arbitragePage": {
-        "title": "Odds73 | Apuestas de arbitraje",
+        "title": "Algolytica | Apuestas de arbitraje",
         "description": "Apuestas de arbitraje",
         "pageTitle": "Apuestas de arbitraje",
         "arbitrageButton": "Obtener arbitraje"
@@ -34,7 +34,7 @@
         "save": "Guardar"
     },
     "trackerArbitragePage": {
-        "title": "Odds73 | Seguimiento de arbitraje",
+        "title": "Algolytica | Seguimiento de arbitraje",
         "description": "Realiza el seguimiento de tus apuestas de arbitraje.",
         "pageTitle": "Seguimiento de arbitraje"
     },

@@ -186,7 +186,7 @@ export default function Settings() {
   return (
     <>
       <LayoutLogged
-        title={"Account Settings | Odds73"}
+        title={"Account Settings | Algolytica"}
         content={"Account settings"}
       >
         <Disclosure

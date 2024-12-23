@@ -19,7 +19,7 @@ export function Posts() {
         "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
       readingTime: "6 min",
       author: {
-        name: "Odds73",
+        name: "Algolytica",
         href: `${locale}/blog`,
         imageUrl:
           "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
@@ -36,7 +36,7 @@ export function Posts() {
         "https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
       readingTime: "4 min",
       author: {
-        name: "Odds73",
+        name: "Algolytica",
         href: `${locale}/blog`,
         imageUrl:
           "https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80",
@@ -53,7 +53,7 @@ export function Posts() {
         "https://images.unsplash.com/photo-1617336234255-2183aedcafb1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
       readingTime: "11 min",
       author: {
-        name: "Odds73",
+        name: "Algolytica",
         href: `${locale}/blog`,
         imageUrl:
           "https://images.unsplash.com/photo-1580748163492-12ac3bea3aae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",

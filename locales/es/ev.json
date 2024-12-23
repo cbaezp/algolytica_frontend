@@ -1,6 +1,6 @@
 {
     "evProPage": {
-        "title": "Odds73 | Apuestas +EV",
+        "title": "Algolytica | Apuestas +EV",
         "content": "Apuestas +EV",
         "getEvButton": "Obtener apuestas +EV"
     },
@@ -42,7 +42,7 @@
         "part2": "a tu seguimiento"
     },
     "trackerPage": {
-        "title": "Odds73 | Seguimiento",
+        "title": "Algolytica | Seguimiento",
         "content": "Seguimiento +EV"
     },
     "trackerTable": {
@@ -63,7 +63,7 @@
         "league": "Liga",
         "bookmaker": "Casa de apuestas",
         "betPrice": "Precio de la apuesta",
-        "trueLine": "Línea real de Odds73",
+        "trueLine": "Línea real de Algolytica",
         "winProbability": "Probabilidad de ganar",
         "betAmount": "Cantidad apostada",
         "bankrollFraction": "Fracción de banca",

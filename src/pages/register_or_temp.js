@@ -44,7 +44,7 @@ const RegisterPage = () => {
 
   let { t } = useTranslation("registration");
   return (
-    <Layout title="Odds73 | Register" content="Register page for Odds73">
+    <Layout title="Algolytica | Register" content="Register page for Algolytica">
       <div className="bg-gradient-to-t from-cyan-900 via-sky-900 to-[#0f131f] min-h-screen flex flex-col">
         {register_success ? (
           <div className="py-24 sm:py-32">

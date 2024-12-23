@@ -14,7 +14,7 @@ const Blog = dynamic(() => import("../components/Blogs"), {
 export default function Blogs({ posts }) {
   return (
     <Layout
-      title={"Articles | Odds73"}
+      title={"Articles | Algolytica"}
       content={
         "From data-driven strategies to cutting-edge technology, stay ahead of the game with our comprehensive coverage of the intersection between sports and analytics."
       }

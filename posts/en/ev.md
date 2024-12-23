@@ -1,7 +1,7 @@
 ---
 title: "Positive Expected Value (EV) in Betting"
 description: "Positive Expected Value (EV) in sports betting, is a measure to determine the worthiness of a bet."
-author: "Odds73 Team"
+author: "Algolytica Team"
 category: "Positive EV"
 date: "2023-07-18"
 bannerImage: "https://images.unsplash.com/photo-1519611103964-90f61a50d3e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1168&q=80"

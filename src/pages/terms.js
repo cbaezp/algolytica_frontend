@@ -8,7 +8,7 @@ import Terms from "../components/Terms";
 export default function terms() {
   return (
     <Layout
-      title={"Terms of Service | Odds73"}
+      title={"Terms of Service | Algolytica"}
       content={
         "From data-driven strategies to cutting-edge technology, stay ahead of the game with our comprehensive coverage of the intersection between sports and analytics."
       }

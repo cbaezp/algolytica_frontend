@@ -1,6 +1,6 @@
 {
     "evProPage": {
-        "title": "Odds73 | +EV bets",
+        "title": "Algolytica | +EV bets",
         "content": "+EV Bets",
         "getEvButton": "Get +EV bets"
     },
@@ -42,7 +42,7 @@
         "part2": "to your tracker"
     },
     "trackerPage": {
-        "title": "Odds73 | Tracker",
+        "title": "Algolytica | Tracker",
         "content": "+EV Tracker"
     },
     "trackerTable": {
@@ -63,7 +63,7 @@
         "team": "Team",
         "bookmaker": "Bookmaker",
         "betPrice": "Bet Price",
-        "trueLine": "Odds73 True Line",
+        "trueLine": "Algolytica True Line",
         "winProbability": "Win Probability",
         "betAmount": "Bet Amount",
         "bankrollFraction": "Bankroll Fraction",

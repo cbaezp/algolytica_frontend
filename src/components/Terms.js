@@ -10,7 +10,7 @@ export default function Terms() {
           1. Acceptance of Terms
         </h2>
         <p class="text-gray-700 mb-6">
-          By accessing or using Odds73 LLC Virginia's sports analytics app (the
+          By accessing or using Algolytica LLC Virginia's sports analytics app (the
           "App"), you agree to comply with and be bound by these Terms of
           Service ("TOS"). If you do not agree to these terms, please do not use
           the App.
@@ -20,7 +20,7 @@ export default function Terms() {
           2. Changes to Terms
         </h2>
         <p class="text-gray-700 mb-6">
-          Odds73 LLC Virginia reserves the right to update or modify these TOS
+          Algolytica LLC Virginia reserves the right to update or modify these TOS
           at any time without prior notice. Your continued use of the App after
           changes to the TOS constitutes acceptance of those changes.
         </p>
@@ -41,7 +41,7 @@ export default function Terms() {
             the App.
           </li>
           <li class="mb-1">
-            You agree that Odds73 LLC Virginia is not providing the App to
+            You agree that Algolytica LLC Virginia is not providing the App to
             facilitate any gambling or wagering activities that you may engage
             in and is providing the App for entertainment and informational
             purposes only.
@@ -63,7 +63,7 @@ export default function Terms() {
         </h2>
         <ul class="list-disc pl-5 text-gray-700 mb-6">
           <li class="mb-1">
-            Odds73 LLC Virginia owns all rights, title, and interest in and to
+            Algolytica LLC Virginia owns all rights, title, and interest in and to
             the App, including all intellectual property rights.
           </li>
           <li class="mb-1">
@@ -75,7 +75,7 @@ export default function Terms() {
         <h2 class="text-xl font-bold text-gray-900 mb-2">6. Disclaimers</h2>
         <ul class="list-disc pl-5 text-gray-700 mb-6">
           <li class="mb-1">
-            Odds73 LLC Virgina does not provide betting or gambling services and
+            Algolytica LLC Virgina does not provide betting or gambling services and
             is not affiliated with any betting or gambling entities.
           </li>
           <li class="mb-1">
@@ -85,22 +85,22 @@ export default function Terms() {
           </li>
           <li class="mb-1">
             ALL STATISTICS AND OTHER INFORMATION PROVIDED THROUGH THE APP IS
-            UNOFFICIAL. Odds73 LLC Virginia makes reasonable effort to keep the
-            information provided via the App up-to-date. However, Odds73 LLC
+            UNOFFICIAL. Algolytica LLC Virginia makes reasonable effort to keep the
+            information provided via the App up-to-date. However, Algolytica LLC
             Virginia DOES NOT warrant or make any representations of any kind
-            with respect to the information provided through the App. Odds73 LLC
+            with respect to the information provided through the App. Algolytica LLC
             Virginia shall not be responsible or liable for the accuracy,
             usefulness or availability of any information transmitted or made
             available via the App, and shall not be responsible or liable for
             any error or omissions in that information.
           </li>
           <li class="mb-1">
-            Odds73 LLC Virginia does not guarantee the accuracy, completeness,
+            Algolytica LLC Virginia does not guarantee the accuracy, completeness,
             or timeliness of information provided through the App.
           </li>
           <li class="mb-1">
             Betting involves risk, and past performance is not indicative of
-            future results. Odds73 LLC Virgina is not responsible for any losses
+            future results. Algolytica LLC Virgina is not responsible for any losses
             you may incur while engaging in gambling activities based on your
             usage of the App.
           </li>
@@ -110,7 +110,7 @@ export default function Terms() {
           7. Limitation of Liability
         </h2>
         <p class="text-gray-700">
-          To the extent permitted by law, Odds73 LLC Virginia shall not be
+          To the extent permitted by law, Algolytica LLC Virginia shall not be
           liable for any indirect, incidental, special, consequential, or
           punitive damages, or any loss of profits or revenues, whether incurred
           directly or indirectly, or any loss of data, use, goodwill, or other
@@ -140,7 +140,7 @@ export default function Terms() {
 
         <h2 class="text-xl font-bold text-gray-900 mb-2">9. Termination</h2>
         <p class="text-gray-700 mb-6">
-          Odds73 LLC Virginia reserves the right, in its sole discretion, to
+          Algolytica LLC Virginia reserves the right, in its sole discretion, to
           terminate your access to the App, and any data you have stored within
           the App, at any time for any reason, without notice to you, and
           provide you a refund for any Fees in accordance with the Refund Policy
@@ -149,17 +149,17 @@ export default function Terms() {
             Privacy Policy
           </a>
           . In the event that your access to the App is terminated under this
-          provision, you acknowledge and agree that Odds73 LLC's sole liability
+          provision, you acknowledge and agree that Algolytica LLC's sole liability
           to you will be for any Fees that you may have paid, and not for any
           incidental, consequential, indirect, special or exemplary damages
-          (even if Odds73 LLC Virginia has been advised of the possibility of
+          (even if Algolytica LLC Virginia has been advised of the possibility of
           such damages) arising from or relating to your involvement in, or
-          Odds73 LLC Virginia’s decision to terminate, your access to the App.
+          Algolytica LLC Virginia’s decision to terminate, your access to the App.
         </p>
 
         <h2 class="text-xl font-bold text-gray-900 mb-2">10. Indemnity</h2>
         <p class="text-gray-700 mb-6">
-          You agree to indemnify and hold Odds73 LLC Virginia and its
+          You agree to indemnify and hold Algolytica LLC Virginia and its
           affiliates, officers, agents, employees, and partners harmless from
           any claims, liabilities, damages, losses, and expenses, including,
           without limitation, reasonable legal and accounting fees, arising out
@@ -172,9 +172,9 @@ export default function Terms() {
         </h2>
         <p class="text-gray-700 mb-6">
           These TOS constitute the entire and exclusive understanding and
-          agreement between Odds73 LLC Virginia and you regarding the App, and
+          agreement between Algolytica LLC Virginia and you regarding the App, and
           these TOS supersede and replace any and all prior oral or written
-          understandings or agreements between Odds73 LLC Virginia and you
+          understandings or agreements between Algolytica LLC Virginia and you
           regarding the App.
         </p>
 
@@ -184,8 +184,8 @@ export default function Terms() {
         <p class="text-gray-700">
           If you have any questions about these Terms of Service, please contact
           us at{" "}
-          <a href="mailto:help@odds73virginia.com" class="text-blue-500">
-            help@odds73virginia.com
+          <a href="mailto:help@Algolyticavirginia.com" class="text-blue-500">
+            help@Algolyticavirginia.com
           </a>
           .
         </p>

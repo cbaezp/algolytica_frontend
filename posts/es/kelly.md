@@ -1,7 +1,7 @@
 ---
 title: "¿Qué es el Criterio de Kelly?"
 description: "El Criterio de Kelly es una fórmula matemática que ayuda a los apostadores a determinar la cantidad óptima a apostar en una apuesta."
-author: "Equipo de Odds73"
+author: "Equipo de Algolytica"
 category: "Criterio de Kelly"
 date: "2023-08-15"
 bannerImage: "https://images.unsplash.com/photo-1519611103964-90f61a50d3e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1168&q=80"

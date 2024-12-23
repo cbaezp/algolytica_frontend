@@ -8,7 +8,7 @@ import Refund from "../components/Refund";
 export default function refund() {
   return (
     <Layout
-      title={"Refund Policy | Odds73"}
+      title={"Refund Policy | Algolytica"}
       content={
         "From data-driven strategies to cutting-edge technology, stay ahead of the game with our comprehensive coverage of the intersection between sports and analytics."
       }
