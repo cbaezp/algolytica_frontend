@@ -230,8 +230,8 @@ export default function TrackerTableArb() {
                               <div className="text-gray-400 ml-1">
                                 {bet.bet_saved_mode === "automatic"
                                   ? capitalizeFirstLetter(
-                                      bet.sport_league.split("_")[0]
-                                    )
+                                    bet.sport_league.split("_")[0]
+                                  )
                                   : bet.sport_league}
                               </div>
                               <span className="px-1 text-gray-400">|</span>
@@ -291,11 +291,10 @@ export default function TrackerTableArb() {
                             data-label={t("trackerArbitrageTable.status")}
                           >
                             <span
-                              className={`inline-flex rounded-full  px-2 text-xs font-semibold leading-5 ${
-                                bet.bet_status == "COMPLETED"
+                              className={`inline-flex rounded-full  px-2 text-xs font-semibold leading-5 ${bet.bet_status == "COMPLETED"
                                   ? "text-green-800 bg-green-100"
                                   : "text-yellow-800 bg-yellow-100"
-                              }`}
+                                }`}
                             >
                               {t(
                                 `trackerArbitrageTable.${bet?.bet_status?.toLowerCase()}`
@@ -402,8 +401,8 @@ export default function TrackerTableArb() {
                                 <div className=" text-gray-200">
                                   {bet.bet_saved_mode === "automatic"
                                     ? capitalizeFirstLetter(
-                                        bet.sport_league.split("_")[0]
-                                      )
+                                      bet.sport_league.split("_")[0]
+                                    )
                                     : bet.sport_league}
                                 </div>
                                 <div className="text-gray-400 text-xs">
@@ -443,11 +442,10 @@ export default function TrackerTableArb() {
                           </td>
                           <td className="whitespace-nowrap px-2 py-4 text-sm text-gray-300">
                             <span
-                              className={`inline-flex rounded-full  px-2 text-xs font-semibold leading-5 ${
-                                bet.bet_status == "COMPLETED"
+                              className={`inline-flex rounded-full  px-2 text-xs font-semibold leading-5 ${bet.bet_status == "COMPLETED"
                                   ? "text-green-800 bg-green-100"
                                   : "text-yellow-800 bg-yellow-100"
-                              }`}
+                                }`}
                             >
                               {t(
                                 `trackerArbitrageTable.${bet?.bet_status?.toLowerCase()}`

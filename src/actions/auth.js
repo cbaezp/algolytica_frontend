@@ -265,6 +265,7 @@ export const githubAuth = (code) => async (dispatch) => {
 
     dispatch({
       type: GITHUB_AUTH_FAIL,
+      payload: err.response?.data || { error: err.message },
     });
 
     // Update isAuthenticated cookie
@@ -300,58 +301,11 @@ export const googleAuth = (code) => async (dispatch) => {
   } catch (err) {
     dispatch({
       type: GOOGLE_AUTH_FAIL,
+      payload: err.response?.data || { error: err.message },
     });
     Cookie.set('isAuthenticated', 'false');
   }
 };
 
 
-
-
-const initialState = {
-  isAuthenticated: false,
-  githubAuthSuccess: false,
-  githubAuthFail: false,
-  googleAuthSuccess: false,
-  googleAuthFail: false,
-
-};
-
-export default function auth(state = initialState, action) {
-  switch (action.type) {
-    case GITHUB_AUTH_SUCCESS:
-    case LOGIN_SUCCESS: // Both GitHub auth and login set isAuthenticated
-      return {
-        ...state,
-        isAuthenticated: true,
-        githubAuthSuccess: true,
-        githubAuthFail: false,
-      };
-    case GITHUB_AUTH_FAIL:
-      return {
-        ...state,
-        isAuthenticated: false,
-        githubAuthSuccess: false,
-        githubAuthFail: true,
-      };
-    case GOOGLE_AUTH_SUCCESS:
-
-
-      return {
-        ...state,
-        isAuthenticated: true,
-        googleAuthSuccess: true,
-        googleAuthFail: false,
-      };
-    case GOOGLE_AUTH_FAIL:
-      return {
-        ...state,
-        isAuthenticated: false,
-        googleAuthSuccess: false,
-        googleAuthFail: true,
-      };
-    default:
-      return state;
-  }
-}
 

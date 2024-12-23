@@ -18,7 +18,7 @@ const ProtectedRoutes = ({ router, children }) => {
     return children; // Allow the maintenance page or middleware to handle this
   }
 
-  let unprotectedRoutes = [
+  const unprotectedRoutes = [
     "/login",
     "/register",
     "/404",
@@ -31,6 +31,8 @@ const ProtectedRoutes = ({ router, children }) => {
     "/verify-registration",
     "/reset-password",
     "/register_pending",
+    "/google-redirect",
+    "/gh-redirect",
     "/terms",
     "/privacy",
     "/",
@@ -44,9 +46,22 @@ const ProtectedRoutes = ({ router, children }) => {
     "/password",
   ]; // Add more paths as needed
 
-  let pathIsProtected = unprotectedRoutes.indexOf(router.pathname) === -1;
+  // Handle conditional unprotected routes
+  const originRoutes = ["/login", "/register"]; // Define valid origin routes
 
-  if (isBrowser() && isAuthenticatedCookie === "false" && pathIsProtected) {
+  const pathIsProtected = !unprotectedRoutes.includes(router.pathname);
+
+  const isComingFromValidOrigin =
+    isBrowser() &&
+    originRoutes.some((origin) => document.referrer.includes(origin)) &&
+    ["/gh-redirect", "/google-redirect"].includes(router.pathname);
+
+  if (
+    isBrowser() &&
+    isAuthenticatedCookie === "false" &&
+    pathIsProtected &&
+    !isComingFromValidOrigin
+  ) {
     router.push("/login");
   }
 

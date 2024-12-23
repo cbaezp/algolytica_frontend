@@ -44,7 +44,7 @@ const Subscribe = () => {
     const cookieValue = Cookies.get("ref_73_234123ksd__");
 
     if (cookieValue) {
-      console.log("Cookie value:", cookieValue);
+
       sendRef(cookieValue);
     }
   }, []);

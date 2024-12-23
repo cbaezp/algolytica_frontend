@@ -76,7 +76,7 @@ export default function Settings() {
         await fetchSettings(user.id);
         await fetchActiveBookies();
       } catch (error) {
-        console.error("An error occurred:", error);
+
         setError("An error occurred while fetching data");
       } finally {
         setLoading(false);
