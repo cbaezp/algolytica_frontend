@@ -3,7 +3,6 @@ import Footer from "../components/Footer";
 import { useSelector } from "react-redux";
 import { Disclosure, Menu, Switch, Transition } from "@headlessui/react";
 import LayoutLogged from "../hocs/LayoutLogged";
-import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 import {
   Bars3Icon,
   BellIcon,
@@ -15,32 +14,13 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 
-import NavbarLogged from "../components/NavbarLogged";
+
 import Link from "next/link";
-const user = {
-  name: "Debbie Lewis",
-  handle: "deblewis",
-  email: "debbielewis@example.com",
-  imageUrl:
-    "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=320&h=320&q=80",
-};
-const navigation = [
-  { name: "Dashboard", href: "#", current: true },
-  { name: "Jobs", href: "#", current: false },
-  { name: "Applicants", href: "#", current: false },
-  { name: "Company", href: "#", current: false },
-];
+
 const subNavigation = [
   { name: "My Account", href: "#", icon: UserCircleIcon, current: true },
   { name: "Settings", href: "/settings", icon: CogIcon, current: false },
   { name: "Password", href: "/password", icon: KeyIcon, current: false },
-  //   { name: "Notifications", href: "#", icon: BellIcon, current: false },
-  {
-    name: "Subscription",
-    href: "https://billing.stripe.com/p/login/6oEeXuclVdg8f2EaEE",
-    icon: CreditCardIcon,
-    current: false,
-  },
 ];
 
 function classNames(...classes) {

@@ -40,7 +40,6 @@ const ProtectedRoutes = ({ router, children }) => {
   ];
 
   const excludedPathsSubs = [
-    "/subscribe",
     "/settings",
     "/myaccount",
     "/password",

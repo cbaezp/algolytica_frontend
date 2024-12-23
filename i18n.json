@@ -45,9 +45,6 @@
         "/settings": [
             "tooltip",
             "settings"
-        ],
-        "/subscribe": [
-            "subscribe"
         ]
     }
 }

@@ -24,12 +24,6 @@ const subNavigation = [
   { name: "Settings", href: "/settings", icon: CogIcon, current: false },
   { name: "Password", href: "/password", icon: KeyIcon, current: true },
   //   { name: "Notifications", href: "#", icon: BellIcon, current: false },
-  {
-    name: "Subscription",
-    href: "https://billing.stripe.com/p/login/6oEeXuclVdg8f2EaEE",
-    icon: CreditCardIcon,
-    current: false,
-  },
 ];
 
 function classNames(...classes) {
@@ -170,92 +164,99 @@ export default function PasswordUpdate() {
                     ))}
                   </nav>
                 </aside>
+                {user.social_provider ? (
+                  <div className="lg:col-span-9 flex items-center justify-center py-12">
+                    <p className="text-white text-center text-lg">
+                      You signed up through {user.social_provider}, so you must visit {user.social_provider} to update your password.
+                    </p>
+                  </div>
+                ) : (
 
-                <form
-                  className="divide-y divide-cyan-500/30 lg:col-span-9"
-                  action="#"
-                  method="POST"
-                  onSubmit={handleSubmit}
-                >
-                  {/* Account Details */}
-                  <div className="divide-y divide-cyan-500/30 pt-6">
-                    <div className="px-4 sm:px-6">
-                      <div>
+                  <form
+                    className="divide-y divide-cyan-500/30 lg:col-span-9"
+                    action="#"
+                    method="POST"
+                    onSubmit={handleSubmit}
+                  >
+                    {/* Account Details */}
+                    <div className="divide-y divide-cyan-500/30 pt-6">
+                      <div className="px-4 sm:px-6">
                         <div>
-                          <h3 className="text-lg font-medium leading-6 text-cyan-300">
-                            Change my password
-                          </h3>
-                        </div>
-                        <div className="mt-5 border-t border-cyan-500/30">
-                          <label className="text-gray-100 text-md">
-                            Current Password
-                          </label>
-                          <input
-                            type="password"
-                            className="block w-full rounded-lg border-cyan-300/50 py-2 px-4 text-white shadow-sm focus:border-cyan-500 focus:ring-cyan-500 bg-[#0f131f] mb-3 mt-2"
-                            name="password"
-                            minLength="8"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            required
-                          />
-                          <label className="text-gray-100 text-md">
-                            New Password
-                          </label>
-                          <input
-                            type="password"
-                            className="block w-full rounded-lg border-cyan-300/50 py-2 px-4 text-white shadow-sm focus:border-cyan-500 focus:ring-cyan-500 bg-[#0f131f] mb-3 mt-2"
-                            name="newPassword"
-                            minLength="8"
-                            value={newPassword}
-                            onChange={(e) => setNewPassword(e.target.value)}
-                            required
-                          />
-                          <label className="text-gray-100 text-md">
-                            Confirm New Password
-                          </label>
-                          <input
-                            type="password"
-                            className="block w-full rounded-lg border-cyan-300/50 py-2 px-4 text-white shadow-sm focus:border-cyan-500 focus:ring-cyan-500 bg-[#0f131f] mb-3 mt-2"
-                            name="confirmPassword"
-                            minLength="8"
-                            value={confirmPassword}
-                            onChange={(e) => setConfirmPassword(e.target.value)}
-                            required
-                          />
+                          <div>
+                            <h3 className="text-lg font-medium leading-6 text-cyan-300">
+                              Change my password
+                            </h3>
+                          </div>
+                          <div className="mt-5 border-t border-cyan-500/30">
+                            <label className="text-gray-100 text-md">
+                              Current Password
+                            </label>
+                            <input
+                              type="password"
+                              className="block w-full rounded-lg border-cyan-300/50 py-2 px-4 text-white shadow-sm focus:border-cyan-500 focus:ring-cyan-500 bg-[#0f131f] mb-3 mt-2"
+                              name="password"
+                              minLength="8"
+                              value={password}
+                              onChange={(e) => setPassword(e.target.value)}
+                              required
+                            />
+                            <label className="text-gray-100 text-md">
+                              New Password
+                            </label>
+                            <input
+                              type="password"
+                              className="block w-full rounded-lg border-cyan-300/50 py-2 px-4 text-white shadow-sm focus:border-cyan-500 focus:ring-cyan-500 bg-[#0f131f] mb-3 mt-2"
+                              name="newPassword"
+                              minLength="8"
+                              value={newPassword}
+                              onChange={(e) => setNewPassword(e.target.value)}
+                              required
+                            />
+                            <label className="text-gray-100 text-md">
+                              Confirm New Password
+                            </label>
+                            <input
+                              type="password"
+                              className="block w-full rounded-lg border-cyan-300/50 py-2 px-4 text-white shadow-sm focus:border-cyan-500 focus:ring-cyan-500 bg-[#0f131f] mb-3 mt-2"
+                              name="confirmPassword"
+                              minLength="8"
+                              value={confirmPassword}
+                              onChange={(e) => setConfirmPassword(e.target.value)}
+                              required
+                            />
 
-                          {updateError && (
-                            <ul className="list-disc list-inside">
-                              {Object.entries(updateError.error).map(
-                                ([key, value]) =>
-                                  value.length > 0 && (
-                                    <li
-                                      key={key}
-                                      className="text-sm text-gray-200"
-                                    >
-                                      {value}
-                                    </li>
-                                  )
-                              )}
-                            </ul>
-                          )}
-                          {successfullyUpdated ? (
-                            <span className="items-center flex justify-center text-green-500 mb-2">
-                              Password successfully updated!
-                            </span>
-                          ) : (
-                            <button
-                              type="submit"
-                              className="w-full text-center py-2 rounded-xl bg-cyan-500 text-white hover:bg-green-dark focus:outline-none hover:bg-white hover:text-cyan-500 mt-6 disabled:bg-[#0f131f] disabled:text-gray-800"
-                            >
-                              Send
-                            </button>
-                          )}
+                            {updateError && (
+                              <ul className="list-disc list-inside">
+                                {Object.entries(updateError.error).map(
+                                  ([key, value]) =>
+                                    value.length > 0 && (
+                                      <li
+                                        key={key}
+                                        className="text-sm text-gray-200"
+                                      >
+                                        {value}
+                                      </li>
+                                    )
+                                )}
+                              </ul>
+                            )}
+                            {successfullyUpdated ? (
+                              <span className="items-center flex justify-center text-green-500 mb-2">
+                                Password successfully updated!
+                              </span>
+                            ) : (
+                              <button
+                                type="submit"
+                                className="w-full text-center py-2 rounded-xl bg-cyan-500 text-white hover:bg-green-dark focus:outline-none hover:bg-white hover:text-cyan-500 mt-6 disabled:bg-[#0f131f] disabled:text-gray-800"
+                              >
+                                Send
+                              </button>
+                            )}
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </form>
+                  </form>)}
               </div>
             </div>
           </div>
