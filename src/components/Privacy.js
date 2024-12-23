@@ -15,7 +15,7 @@ export default function Privacy() {
         </h3>
         <p className="mt-2 text-gray-900">
           To ensure the quality of your experience, Algolytica LLC Virginia collects
-          and processes information about our users. We are committed to
+          and processes information about our users. I am committed to
           handling that information with respect, because your privacy is very
           important to us. Algolytica LLC Virginia ("Algolytica," "we," "us," or "our")
           has prepared this notice to explain how we collect, use, and share
@@ -173,7 +173,7 @@ export default function Privacy() {
             or device, the type of browser being used and the URL of the web
             page from which the pixel was viewed. Pixel tags also allow us to
             send email messages in a format that users can read, tell us whether
-            emails have been opened, and help to ensure we are sending only
+            emails have been opened, and help to ensure I am sending only
             messages that may be of interest to our users. We may also use this
             information to reduce or eliminate messages sent to a user.
           </li>
@@ -194,7 +194,7 @@ export default function Privacy() {
             to your interests and to better understand your usage of,
             preferences on, and visitation of our Services and other sites,
             social media networks, and applications tracked by such vendors.
-            This notice does not apply to, and we are not responsible for,
+            This notice does not apply to, and I am not responsible for,
             cookies, pixel tags and other technologies used in connection with
             other parties' ads, and we encourage you to check the privacy
             policies of advertisers and ad services to learn about their use of
@@ -241,7 +241,7 @@ export default function Privacy() {
           d. Information Collected from Other Sources
         </h4>
         <p className=" text-gray-900 mt-2">
-          We may supplement the information we have about you with information
+          We may supplement the information I have about you with information
           received from other sources including from our pages on certain Social
           Networking Sites, the Social Networking Sites themselves, and from
           commercially available sources (e.g., data brokers and public
@@ -271,11 +271,11 @@ export default function Privacy() {
           control those services and content and our Terms of Use and this
           notice do not apply to those services and content. You should read the
           terms of use agreements and privacy policies that apply to such
-          services and content. We are not responsible for the practices used by
+          services and content. I am not responsible for the practices used by
           any third-party websites or services linked to or from our Website or
           Application(s), including, without limitation, the information or
           content contained within them. By using our Website, Application(s),
-          or Services, you acknowledge and agree that we are not responsible for
+          or Services, you acknowledge and agree that I am not responsible for
           and do not have control over any third-party services and content that
           you authorize to access information you provide to them. If you are
           using a third-party website or service and allow it to access your
@@ -294,7 +294,7 @@ export default function Privacy() {
           you make any comments on a blog or forum associated with the Website
           or App, you should be aware that any personal information you submit
           there can be read, collected, or used by other users of the blog or
-          forum and might be used to send you unsolicited messages. We are not
+          forum and might be used to send you unsolicited messages. I am not
           responsible for any personal information you choose to submit in these
           blogs and forums. Creation of Aggregated, Anonymized, or De-Identified
           Data. We may create aggregated, anonymized or de-identified data
@@ -356,9 +356,9 @@ export default function Privacy() {
             be providing your information to both us and the Co-Branded Partner,
             or we may share your information with the Co-Branded Partner. Please
             note that the Co-Branded Partner's privacy policy may also apply to
-            its use of your information. We are not responsible for the
+            its use of your information. I am not responsible for the
             practices used by Co-Branded Partners. In addition, by using our
-            Website and App, you acknowledge and agree that we are not
+            Website and App, you acknowledge and agree that I am not
             responsible for and do not have control over any Co-Branded
             Partners.
           </li>
@@ -470,7 +470,7 @@ export default function Privacy() {
             request, but please note that we may be legally or otherwise
             required to keep such information and not delete it (or to keep this
             information for a certain time, in which case we will comply with
-            your deletion request only after we have fulfilled such
+            your deletion request only after I have fulfilled such
             requirements). Deletion requests may be made by emailing us at{" "}
             <a href="mailto:help@Algolytica.com">help@Algolytica.com</a>. When we delete
             information, it will be deleted from the active database, but may
@@ -490,7 +490,7 @@ export default function Privacy() {
         </h3>
 
         <p className=" text-gray-900 mt-2">
-          You may request a copy of personal information that we have collected
+          You may request a copy of personal information that I have collected
           about you by emailing our privacy team via email addressed to{" "}
           <a href="mailto:help@Algolytica.com">help@Algolytica.com</a>. You may also
           request that we correct any factual inaccuracies in your personal
@@ -548,7 +548,7 @@ export default function Privacy() {
           consent to that transfer. The Website and App are not intended to
           subject us to the laws or jurisdiction of any state, country or
           territory other than those of the United States. Your information may
-          be stored and processed in any country where we have facilities or in
+          be stored and processed in any country where I have facilities or in
           which we engage service providers and, by using the Website or App,
           you consent to the transfer of information to countries outside of
           your country of residence, including the United States, which may have
@@ -609,7 +609,7 @@ export default function Privacy() {
             information about you;
           </li>
           <li>
-            the categories of personal information that we have disclosed about
+            the categories of personal information that I have disclosed about
             you for our business purposes and the categories of suppliers to
             whom the personal information was disclosed;
           </li>
@@ -746,10 +746,10 @@ export default function Privacy() {
         </p>
 
         <p class="mt-4">
-          We have opted for this alternative approach. As stated in this notice,
+          I have opted for this alternative approach. As stated in this notice,
           we give customers a mechanism to opt out of having their personal
           information disclosed to third parties for their direct marketing
-          purposes. Therefore, we are not required to maintain or disclose a
+          purposes. Therefore, I am not required to maintain or disclose a
           list of third parties that received your personal information for
           marketing purposes. If you wish to opt-out of sharing your personal
           information with third parties for their direct marketing purposes,

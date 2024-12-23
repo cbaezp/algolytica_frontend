@@ -28,7 +28,7 @@ export default function MaintenancePage() {
           Working on some updates
         </h1>
         <p className="text-lg text-gray-200 animate-fade-in delay-1">
-          We are currently performing maintenance. Please check back later.
+          I am currently performing maintenance. Please check back later.
         </p>
       </div>
 

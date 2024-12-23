@@ -16,7 +16,7 @@ export function Faqs() {
       },
       // {
       //   question: "?",
-      //   answer: "Absolutely, we are happy to take your money in all forms.",
+      //   answer: "Absolutely, I am happy to take your money in all forms.",
       // },
     ],
     [

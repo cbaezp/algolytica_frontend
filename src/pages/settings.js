@@ -121,6 +121,7 @@ export default function Settings() {
       setLanguage(Object.values(data)[0].language);
       setOddsFormat(Object.values(data)[0].odds_format);
       setMinEvProbabiliy(Object.values(data)[0].min_ev_win_probability);
+
     } catch (err) {
       return err;
       console.error(err);
@@ -138,6 +139,8 @@ export default function Settings() {
       const data = await res.json();
 
       setActiveBookies(Object.values(data)[0]);
+
+      console.log(Object.values(data)[0]);
     } catch (err) {
       console.error(err);
 
@@ -796,7 +799,7 @@ export default function Settings() {
                                   htmlFor={`bookie-${bookie.id}`}
                                   className="select-none font-medium text-gray-300"
                                 >
-                                  {bookie.name}
+                                  {bookie.display_name}
                                 </label>
                               </div>
                               <div className="ml-3 flex h-5 items-center">

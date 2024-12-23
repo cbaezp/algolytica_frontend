@@ -125,7 +125,7 @@ const NavbarNotificationBell = () => {
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+          <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none ">
             <div className="py-1">
               <span className="text-gray-700 font-bold block px-4 py-2 text-sm">
                 Updates
@@ -151,7 +151,7 @@ const NavbarNotificationBell = () => {
                     {evNotification.map((notification, index) => (
                       <Menu.Item key={index} as="div">
                         <ul>
-                          <li className="text-gray-700 block px-4 py-2 text-sm">
+                          <li className="text-gray-700 block px-4 py-2 text-sm ">
                             {" "}
                             {notification.title}{" "}
                           </li>

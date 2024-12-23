@@ -12,7 +12,7 @@
     "alreadyHaveAnAccount": "Already have an account?",
     "login": "Login",
     "verifyEmail": "Verify your email",
-    "verifyEmailMessage": " We have successfully sent the verification to the email address you provided. Please check your inbox or spam folder and follow the instructions provided to complete the verification process.",
+    "verifyEmailMessage": " I have successfully sent the verification to the email address you provided. Please check your inbox or spam folder and follow the instructions provided to complete the verification process.",
     "verification": {
         "title": "Algolytica | Verify Account",
         "description": "Verify your account to start using Algolytica",
