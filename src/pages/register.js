@@ -101,76 +101,78 @@ const RegisterPage = () => {
           </div>
         ) : (
           <div className="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
-            <form
-              className="px-6 py-8 rounded shadow-2xl text-black w-full border border-cyan-500/10"
-              onSubmit={onSubmit}
-            >
-              <h1 className="mb-8 text-3xl text-center text-gray-200 text-extrabold">
-                {t("signUp")}
-              </h1>
-              <input
-                type="text"
-                className="block w-full rounded-lg border-cyan-300/50 py-2 px-4 text-gray-200 shadow-sm focus:border-cyan-500 focus:ring-cyan-500 bg-[#0f131f] mb-3 mt-2"
-                name="username"
-                placeholder={t("username")}
-                onChange={onChange}
-                value={username}
-                required
-              />
+            <div className="px-6 py-8 rounded shadow-2xl text-black w-full border border-cyan-500/10">
 
-              <input
-                type="text"
-                className="block w-full rounded-lg border-cyan-300/50 py-2 px-4 text-gray-200 shadow-sm focus:border-cyan-500 focus:ring-cyan-500 bg-[#0f131f] mb-3 mt-2"
-                name="email"
-                placeholder={t("email")}
-                onChange={onChange}
-                value={email}
-                required
-              />
+              <form
 
-              <input
-                type="password"
-                className="block w-full rounded-lg border-cyan-300/50 py-2 px-4 text-gray-200 shadow-sm focus:border-cyan-500 focus:ring-cyan-500 bg-[#0f131f] mb-3 mt-2"
-                name="password"
-                placeholder={t("password")}
-                onChange={onChange}
-                value={password}
-                minLength="8"
-                required
-              />
-              <input
-                type="password"
-                className="block w-full rounded-lg border-cyan-300/50 py-2 px-4 text-gray-200 shadow-sm focus:border-cyan-500 focus:ring-cyan-500 bg-[#0f131f] mb-3 mt-2"
-                name="password_confirm"
-                placeholder={t("confirmPassword")}
-                onChange={onChange}
-                value={password_confirm}
-                minLength="8"
-                required
-              />
-
-              {registrationError && showError && (
-                <ul className="list-disc list-inside">
-                  {Object.entries(registrationError.error).map(
-                    ([key, value]) =>
-                      value.length > 0 && (
-                        <li key={key} className="text-sm text-gray-200">
-                          {value}
-                        </li>
-                      )
-                  )}
-                </ul>
-              )}
-
-
-              <button
-                type="submit"
-                className="w-full text-center py-2 rounded-xl bg-cyan-500 text-white hover:bg-green-dark focus:outline-none hover:bg-white hover:text-cyan-500 mt-6 disabled:bg-[#0f131f] disabled:text-gray-800"
+                onSubmit={onSubmit}
               >
-                {t("createAccount")}
-              </button>
+                <h1 className="mb-8 text-3xl text-center text-gray-200 text-extrabold">
+                  {t("signUp")}
+                </h1>
+                <input
+                  type="text"
+                  className="block w-full rounded-lg border-cyan-300/50 py-2 px-4 text-gray-200 shadow-sm focus:border-cyan-500 focus:ring-cyan-500 bg-[#0f131f] mb-3 mt-2"
+                  name="username"
+                  placeholder={t("username")}
+                  onChange={onChange}
+                  value={username}
+                  required
+                />
+
+                <input
+                  type="text"
+                  className="block w-full rounded-lg border-cyan-300/50 py-2 px-4 text-gray-200 shadow-sm focus:border-cyan-500 focus:ring-cyan-500 bg-[#0f131f] mb-3 mt-2"
+                  name="email"
+                  placeholder={t("email")}
+                  onChange={onChange}
+                  value={email}
+                  required
+                />
+
+                <input
+                  type="password"
+                  className="block w-full rounded-lg border-cyan-300/50 py-2 px-4 text-gray-200 shadow-sm focus:border-cyan-500 focus:ring-cyan-500 bg-[#0f131f] mb-3 mt-2"
+                  name="password"
+                  placeholder={t("password")}
+                  onChange={onChange}
+                  value={password}
+                  minLength="8"
+                  required
+                />
+                <input
+                  type="password"
+                  className="block w-full rounded-lg border-cyan-300/50 py-2 px-4 text-gray-200 shadow-sm focus:border-cyan-500 focus:ring-cyan-500 bg-[#0f131f] mb-3 mt-2"
+                  name="password_confirm"
+                  placeholder={t("confirmPassword")}
+                  onChange={onChange}
+                  value={password_confirm}
+                  minLength="8"
+                  required
+                />
+
+                {registrationError && showError && (
+                  <ul className="list-disc list-inside">
+                    {Object.entries(registrationError.error).map(
+                      ([key, value]) =>
+                        value.length > 0 && (
+                          <li key={key} className="text-sm text-gray-200">
+                            {value}
+                          </li>
+                        )
+                    )}
+                  </ul>
+                )}
 
 
+                <button
+                  type="submit"
+                  className="w-full text-center py-2 rounded-xl bg-cyan-500 text-white hover:bg-green-dark focus:outline-none hover:bg-white hover:text-cyan-500 mt-6 disabled:bg-[#0f131f] disabled:text-gray-800"
+                >
+                  {t("createAccount")}
+                </button>
+
+              </form>
               <div className="text-center text-xs text-gray-400 mt-7">
                 {t("alreadyHaveAnAccount")}
                 <span> </span>
@@ -240,10 +242,8 @@ const RegisterPage = () => {
                   {t("privacyPolicy")}
                 </Link>
               </div>
-            </form>
 
-
-
+            </div>
 
           </div>
         )}

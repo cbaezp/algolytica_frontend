@@ -98,52 +98,54 @@ const LoginPage = () => {
             </Link>
           </div>
           <div className="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-1">
-            <form
-              className="px-6 py-8 rounded shadow-2xl text-black w-full border border-cyan-500/10"
-              onSubmit={onSubmit}
-            >
-              <h1 className="mb-8 text-3xl text-center text-gray-200 text-extrabold">
-                Login
-              </h1>
-              <label className="text-gray-100 text-md">
-                {t("formUsername")}
-              </label>
-              <input
-                type="text"
-                className="block w-full rounded-lg border-cyan-300/50 py-2 px-4 text-white shadow-sm focus:border-cyan-500 focus:ring-cyan-500 bg-[#0f131f] mb-3 mt-2"
-                name="username"
-                onChange={onChange}
-                value={username}
-                required
-              />
-              <label className="text-gray-100 text-md">
-                {t("formPassword")}
-              </label>
-              <input
-                type="password"
-                className="block w-full rounded-lg border-cyan-300/50 py-2 px-4 text-white shadow-sm focus:border-cyan-500 focus:ring-cyan-500 bg-[#0f131f] mb-3 mt-2"
-                name="password"
-                onChange={onChange}
-                value={password}
-                minLength="8"
-                required
-              />
-              {loginUnsuccessful && (
-                <span className="text-red-300 text-sm">
-                  {t("incorrectUsernameOrPassword")}
-                </span>
-              )}
-              <button
-                disabled={loading}
-                type="submit"
-                className="w-full text-center py-2 rounded-xl bg-cyan-500 text-white hover:bg-green-dark focus:outline-none hover:bg-white hover:text-cyan-500 mt-6 disabled:bg-[#0f131f] disabled:text-gray-800"
+            <div className="px-6 py-8 rounded shadow-2xl text-black w-full border border-cyan-500/10">
+              <form
+
+                onSubmit={onSubmit}
               >
-                {loading ? (
-                  <PropagateLoader color="#06b6d4" className="pb-3" />
-                ) : (
-                  `${t("formSubmit")}`
+                <h1 className="mb-8 text-3xl text-center text-gray-200 text-extrabold">
+                  Login
+                </h1>
+                <label className="text-gray-100 text-md">
+                  {t("formUsername")}
+                </label>
+                <input
+                  type="text"
+                  className="block w-full rounded-lg border-cyan-300/50 py-2 px-4 text-white shadow-sm focus:border-cyan-500 focus:ring-cyan-500 bg-[#0f131f] mb-3 mt-2"
+                  name="username"
+                  onChange={onChange}
+                  value={username}
+                  required
+                />
+                <label className="text-gray-100 text-md">
+                  {t("formPassword")}
+                </label>
+                <input
+                  type="password"
+                  className="block w-full rounded-lg border-cyan-300/50 py-2 px-4 text-white shadow-sm focus:border-cyan-500 focus:ring-cyan-500 bg-[#0f131f] mb-3 mt-2"
+                  name="password"
+                  onChange={onChange}
+                  value={password}
+                  minLength="8"
+                  required
+                />
+                {loginUnsuccessful && (
+                  <span className="text-red-300 text-sm">
+                    {t("incorrectUsernameOrPassword")}
+                  </span>
                 )}
-              </button>
+                <button
+                  disabled={loading}
+                  type="submit"
+                  className="w-full text-center py-2 rounded-xl bg-cyan-500 text-white hover:bg-green-dark focus:outline-none hover:bg-white hover:text-cyan-500 mt-6 disabled:bg-[#0f131f] disabled:text-gray-800"
+                >
+                  {loading ? (
+                    <PropagateLoader color="#06b6d4" className="pb-3" />
+                  ) : (
+                    `${t("formSubmit")}`
+                  )}
+                </button>
+              </form>
               <div className="mt-6 text-gray-300 text-xs text-center">
                 {t("dontHaveAnAccount")}{" "}
                 <Link
@@ -188,11 +190,11 @@ const LoginPage = () => {
                   {t("loginWithGitHub")}
                 </button>
               </div>
-            </form>
 
 
 
 
+            </div>
 
           </div>
         </div>
