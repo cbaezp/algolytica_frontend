@@ -1,6 +1,3 @@
-import fs from "fs";
-import matter from "gray-matter";
-import dynamic from "next/dynamic";
 import Layout from "../hocs/Layout";
 import Privacy from "../components/Privacy";
 
