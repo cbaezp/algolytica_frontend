@@ -236,76 +236,59 @@ export const logout = () => async (dispatch) => {
 
 
 
-
-export const githubAuth = (code) => async (dispatch) => {
-
-  try {
-    const res = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/dj-rest-auth/github/`, { code });
-    const { access, refresh, user } = res.data;
-
-    // Store tokens in cookies
-    Cookie.set("access", access);
-    Cookie.set("refresh", refresh || "");
-    Cookie.set("user", JSON.stringify(user));
-    Cookie.set("isAuthenticated", "true");
-
-    // Dispatch GITHUB_AUTH_SUCCESS
-    dispatch({
-      type: GITHUB_AUTH_SUCCESS,
-      payload: res.data,
-    });
-
-    // Update isAuthenticated in Redux
-    dispatch({
-      type: LOGIN_SUCCESS, // Use the same action as a regular login
-    });
-
-
-  } catch (err) {
-
-    dispatch({
-      type: GITHUB_AUTH_FAIL,
-      payload: err.response?.data || { error: err.message },
-    });
-
-    // Update isAuthenticated cookie
-    Cookie.set("isAuthenticated", "false");
-  }
-};
-
-
-// Google Auth
-
 export const googleAuth = (code) => async (dispatch) => {
   try {
-    const res = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/dj-rest-auth/google/`, { code });
-    const { access, refresh, user } = res.data;
+    // Call the Next.js API route to handle Google login
+    const res = await axios.post('/api/account/google-login', { code });
 
-    // Store tokens in cookies
-    Cookie.set('access', access);
-    Cookie.set('refresh', refresh || '');
-    Cookie.set('user', JSON.stringify(user));
-    Cookie.set('isAuthenticated', 'true');
-
+    // If the response is successful
     dispatch({
       type: GOOGLE_AUTH_SUCCESS,
-      payload: res.data,
+      payload: res.data, // Pass success payload
     });
-
-
 
     dispatch({
       type: LOGIN_SUCCESS, // Update Redux isAuthenticated state
     });
-
   } catch (err) {
+    // Capture the server error response or fallback to the default error message
+    const errorPayload = err.response?.data
+      ? err.response.data
+      : { error: err.message };
+
+    // Dispatch the error action
     dispatch({
       type: GOOGLE_AUTH_FAIL,
-      payload: err.response?.data || { error: err.message },
+      payload: errorPayload, // Pass actual server response or fallback
     });
-    Cookie.set('isAuthenticated', 'false');
   }
 };
 
 
+export const githubAuth = (code) => async (dispatch) => {
+  try {
+    // Call the Next.js API route to handle GitHub login
+    const res = await axios.post('/api/account/github-login', { code });
 
+    // If the response is successful
+    dispatch({
+      type: GITHUB_AUTH_SUCCESS,
+      payload: res.data, // Pass success payload
+    });
+
+    dispatch({
+      type: LOGIN_SUCCESS, // Update Redux isAuthenticated state
+    });
+  } catch (err) {
+    // Capture the server error response or fallback to the default error message
+    const errorPayload = err.response?.data
+      ? err.response.data
+      : { error: err.message };
+
+    // Dispatch the error action
+    dispatch({
+      type: GITHUB_AUTH_FAIL,
+      payload: errorPayload, // Pass actual server response or fallback
+    });
+  }
+};
