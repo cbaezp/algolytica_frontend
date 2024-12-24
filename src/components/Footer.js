@@ -6,8 +6,7 @@ const navigation = {
     { name: "FAQ", href: "/#faq" },
     { name: "Terms of Service", href: "/terms" },
     { name: "Privacy Policy", href: "/privacy" },
-    { name: "Refund Policy", href: "/refund" },
-    { name: "Do Not Sell My Personal Information", href: "/#contact" },
+    //{ name: "Do Not Sell My Personal Information", href: "/#contact" },
   ],
   social: [
     {
@@ -117,8 +116,10 @@ export default function Footer() {
           This website is exclusively intended for entertainment purposes and
           does not facilitate any form of actual monetary wagering. Algolytica.com
           does not engage in the acceptance or placement of bets and is not a
-          gambling platform. &copy; 2024 Algolytica. All rights reserved.
+          gambling platform. &copy; {new Date().getFullYear()} Algolytica. All rights reserved.
+          Crafted by <a href="https://github.com/cbaezp" className="hover:text-cyan-600">cbaezp</a>
         </p>
+
       </div>
     </footer>
   );

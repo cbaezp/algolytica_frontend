@@ -223,12 +223,7 @@ const RegisterPage = () => {
               <div className="text-center text-xs text-gray-300 mt-4">
                 {t("disclaimer")}
                 <span> </span>
-                <Link
-                  className="text-gray-400 hover:text-cyan-500"
-                  href="/refund"
-                >
-                  Refund Policy{", "}
-                </Link>
+
                 <Link
                   className="border-grey-dark text-gray-400 hover:text-cyan-500"
                   href="/terms"
