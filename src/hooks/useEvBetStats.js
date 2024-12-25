@@ -64,7 +64,7 @@ function useEvBets(initialDate = undefined, endDate = undefined) {
         }
         setBetStats(betStats);
       } catch (err) {
-        console.log(err);
+        return err;
       }
     };
     fetchBets();

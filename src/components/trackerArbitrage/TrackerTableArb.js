@@ -96,7 +96,7 @@ export default function TrackerTableArb() {
       }
       dispatch(addBets(betStats));
     } catch (err) {
-      console.log(err);
+      return err;
     }
   };
 
@@ -292,8 +292,8 @@ export default function TrackerTableArb() {
                           >
                             <span
                               className={`inline-flex rounded-full  px-2 text-xs font-semibold leading-5 ${bet.bet_status == "COMPLETED"
-                                  ? "text-green-800 bg-green-100"
-                                  : "text-yellow-800 bg-yellow-100"
+                                ? "text-green-800 bg-green-100"
+                                : "text-yellow-800 bg-yellow-100"
                                 }`}
                             >
                               {t(
@@ -443,8 +443,8 @@ export default function TrackerTableArb() {
                           <td className="whitespace-nowrap px-2 py-4 text-sm text-gray-300">
                             <span
                               className={`inline-flex rounded-full  px-2 text-xs font-semibold leading-5 ${bet.bet_status == "COMPLETED"
-                                  ? "text-green-800 bg-green-100"
-                                  : "text-yellow-800 bg-yellow-100"
+                                ? "text-green-800 bg-green-100"
+                                : "text-yellow-800 bg-yellow-100"
                                 }`}
                             >
                               {t(

@@ -8,7 +8,7 @@ function useUserSettings() {
 
   useEffect(() => {
     const clientId = window.localStorage.getItem("clientId");
-    console.log(clientId)
+
     const fetchUserSettings = async () => {
       try {
         const res = await fetch("/api/content/settings/", {
