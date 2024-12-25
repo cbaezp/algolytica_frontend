@@ -15,13 +15,6 @@ tags:
 
 El arbitraje en apuestas, a menudo referido como "arbing", es una estrategia de apuestas donde se colocan apuestas simultáneamente en todos los resultados de un evento a cuotas que garantizan una ganancia, independientemente del resultado final. La oportunidad generalmente surge cuando diferentes casas de apuestas tienen opiniones variadas sobre el resultado de un evento o cuando cometen errores al establecer las cuotas.
 
-# 
-
-Video:
-
-[![Video Title](http://img.youtube.com/vi/W4tgT7qQ1zU/0.jpg)](http://www.youtube.com/watch?v=W4tgT7qQ1zU "Video Title")
-
-
 
 
 ## Un Ejemplo Práctico con Fútbol

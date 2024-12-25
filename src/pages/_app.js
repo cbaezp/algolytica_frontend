@@ -3,6 +3,7 @@ import { useStore } from "../store";
 import Script from "next/script";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import { Analytics } from '@vercel/analytics/next';
 
 import Head from "next/head";
 import "/styles/globals.css";
@@ -45,10 +46,12 @@ const App = ({ Component, pageProps, router }) => {
       <Head>
         <title>Algolytica</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Leverage our software's advanced algorithms and real-time data analysis to discover positive expected value scenarios and arbitrage opportunities." />
       </Head>
       <ProtectedRoutes router={router}>
         <Component {...pageProps} />
       </ProtectedRoutes>
+      <Analytics />
     </Provider>
   );
 };
