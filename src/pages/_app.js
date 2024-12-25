@@ -4,7 +4,7 @@ import Script from "next/script";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { Analytics } from '@vercel/analytics/next';
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import Head from "next/head";
 import "/styles/globals.css";
 import ProtectedRoutes from "../routes/ProtectedRoutes";
@@ -52,6 +52,7 @@ const App = ({ Component, pageProps, router }) => {
         <Component {...pageProps} />
       </ProtectedRoutes>
       <Analytics />
+      <SpeedInsights />
     </Provider>
   );
 };
