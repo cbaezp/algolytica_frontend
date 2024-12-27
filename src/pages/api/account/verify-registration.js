@@ -2,16 +2,14 @@ import { API_URL } from "../../../config/index";
 
 export default async (req, res) => {
   if (req.method === "POST") {
-    const { user_id, timestamp, signature } = req.body;
+    const { signature } = req.body;
 
     const body = JSON.stringify({
-      user_id: user_id,
-      timestamp: timestamp,
-      signature: signature,
+      key: signature,
     });
 
     try {
-      const apiRes = await fetch(`${API_URL}/account/verify-registration/`, {
+      const apiRes = await fetch(`${API_URL}/dj-rest-auth/registration/verify-email/`, {
         method: "POST",
         headers: {
           Accept: "application/json",

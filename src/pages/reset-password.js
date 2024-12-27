@@ -1,6 +1,4 @@
-//add forgot password page: input username; add hrf to login page | Done
-//add reset password page, extract data from url, add next API endpont to reset password | Pending
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Layout from "../hocs/Layout";
 import { CheckCircleIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
@@ -12,6 +10,15 @@ function PasswordReset() {
   const [password, setPassword] = useState("");
   const [passwordConfirmation, setPasswordConfirmation] = useState("");
   const [passwordsDoNotMatch, setPasswordsDoNotMatch] = useState(true);
+  const [uid, setUid] = useState("");
+  const [token, setToken] = useState("");
+
+  useEffect(() => {
+    // Extract uid and token from the URL
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    setUid(urlSearchParams.get("uid") || ""); // 'uid' parameter from backend
+    setToken(urlSearchParams.get("token") || ""); // 'token' parameter from backend
+  }, []);
 
   const onChangePassword = (e) => {
     setPasswordConfirmation(e);
@@ -25,21 +32,18 @@ function PasswordReset() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
+
     try {
-      const urlSearchParams = new URLSearchParams(window.location.search);
-      const params = Object.fromEntries(urlSearchParams.entries());
-      const { user_id, timestamp, signature } = params;
       const response = await fetch(`/api/account/reset-password/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-
         body: JSON.stringify({
-          user_id: user_id,
-          timestamp: timestamp,
-          signature: signature,
-          password: passwordConfirmation,
+          new_password1: password,
+          new_password2: passwordConfirmation,
+          uid: uid,
+          token: token,
         }),
       });
 
@@ -48,24 +52,23 @@ function PasswordReset() {
       } else {
         setError(true);
       }
-      // handle response as needed
     } catch (error) {
-      // handle error
+      setError(true);
     }
+
     setIsLoading(false);
   };
 
   return (
     <>
       <Layout
-        title="Algolytica | Verify Account"
-        content="Verify your Algolytica account"
+        title="Algolytica | Reset Password"
+        content="Reset your password on Algolytica"
       >
         <div className="min-h-screen flex flex-col relative bg-gradient-to-t from-cyan-900 via-sky-900 to-[#0f131f]">
           {successfullyVerified ? (
             <div className="flex flex-col items-center mt-8">
               <div className="flex items-center">
-                {" "}
                 <p className="text-gray-200 ">
                   Your password has been successfully updated!
                 </p>
@@ -80,22 +83,17 @@ function PasswordReset() {
               </Link>
             </div>
           ) : (
-            <div className="">
+            <div>
               <form
                 className="divide-y divide-cyan-500/30 lg:col-span-9 w-1/2 items-center mx-auto mt-8"
-                action="#"
-                method="POST"
                 onSubmit={handleSubmit}
               >
-                {/* Account Details */}
                 <div className="divide-y divide-cyan-500/30 pt-6">
                   <div className="px-4 sm:px-6">
                     <div>
-                      <div>
-                        <h3 className="text-lg font-medium leading-6 text-cyan-300">
-                          Change my password
-                        </h3>
-                      </div>
+                      <h3 className="text-lg font-medium leading-6 text-cyan-300">
+                        Change my password
+                      </h3>
                       <div className="mt-5 border-t border-cyan-500/30">
                         <label className="text-gray-100 text-md">
                           Password

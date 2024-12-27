@@ -5,12 +5,12 @@ export default async (req, res) => {
     const { username } = req.body;
 
     const body = JSON.stringify({
-      login: username,
+      email: username,
     });
 
     try {
       const apiRes = await fetch(
-        `${API_URL}/account/send-reset-password-link/`,
+        `${API_URL}/dj-rest-auth/password/reset/`,
         {
           method: "POST",
           headers: {

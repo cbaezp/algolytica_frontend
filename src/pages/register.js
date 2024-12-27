@@ -2,7 +2,6 @@ import { useState } from "react";
 import Layout from "../hocs/Layout";
 import { useSelector, useDispatch } from "react-redux";
 import { register } from "../actions/auth";
-import Loader from "react-loader-spinner";
 import { useRouter } from "next/router";
 import { InboxArrowDownIcon } from "@heroicons/react/20/solid";
 import { FaGithub } from 'react-icons/fa';

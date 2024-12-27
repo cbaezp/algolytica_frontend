@@ -2,13 +2,10 @@ import { useState, useEffect } from "react";
 import { Disclosure, Switch } from "@headlessui/react";
 import LayoutLogged from "../hocs/LayoutLogged";
 import { useSelector, useDispatch } from "react-redux";
-import userSettingsAction from "../actions/userSettings";
 import useTranslation from "next-translate/useTranslation";
-import { check_auth_status } from "../actions/auth";
 import { useRouter } from "next/router";
 import {
   CogIcon,
-  CreditCardIcon,
   InformationCircleIcon,
   KeyIcon,
   UserCircleIcon,
@@ -18,7 +15,6 @@ import {
   Popover,
   PopoverHandler,
   PopoverContent,
-  Button,
 } from "@material-tailwind/react";
 
 import { Tooltip, Typography } from "@material-tailwind/react";

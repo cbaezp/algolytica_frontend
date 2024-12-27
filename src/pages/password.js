@@ -4,14 +4,9 @@ import { Disclosure, Menu, Switch, Transition } from "@headlessui/react";
 import LayoutLogged from "../hocs/LayoutLogged";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 import {
-  Bars3Icon,
-  BellIcon,
   CogIcon,
-  CreditCardIcon,
   KeyIcon,
-  SquaresPlusIcon,
   UserCircleIcon,
-  XMarkIcon,
 } from "@heroicons/react/24/outline";
 
 const subNavigation = [

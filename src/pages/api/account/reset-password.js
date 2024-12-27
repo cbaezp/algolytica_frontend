@@ -2,17 +2,17 @@ import { API_URL } from "../../../config/index";
 
 export default async (req, res) => {
   if (req.method === "POST") {
-    const { user_id, timestamp, signature, password } = req.body;
+    const { new_password1, new_password2, uid, token } = req.body;
 
     const body = JSON.stringify({
-      user_id: user_id,
-      timestamp: timestamp,
-      signature: signature,
-      password: password,
+      uid: uid,
+      token: token,
+      new_password1: new_password1,
+      new_password2: new_password2,
     });
 
     try {
-      const apiRes = await fetch(`${API_URL}/account/reset-password/`, {
+      const apiRes = await fetch(`${API_URL}/dj-rest-auth/password/reset/confirm/`, {
         method: "POST",
         headers: {
           Accept: "application/json",

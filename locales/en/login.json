@@ -11,9 +11,9 @@
     "forgotPasswordTitle": "Forgot password?",
     "forgotPassword": "Forgot password?",
     "resetPassword": "Reset password",
-    "resetPasswordDescription": "Type your username in the field below to receive a password reset link via email.",
+    "resetPasswordDescription": "Type your email in the field below to receive a password reset link via email.",
     "send": "Send",
-    "successMessage": "If the username you entered is valid, you will receive an email with a link to reset your password.",
+    "successMessage": "If the email you entered is valid, you will receive an email with a link to reset your password.",
     "loginWithGoogle": "Sign in with Google",
     "loginWithGitHub": "Sign in with GitHub"
 }

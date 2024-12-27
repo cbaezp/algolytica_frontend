@@ -18,9 +18,9 @@ function SignUpConfirmation() {
     setIsLoading(true);
 
     try {
-      const urlSearchParams = new URLSearchParams(window.location.search);
-      const params = Object.fromEntries(urlSearchParams.entries());
-      const { user_id, timestamp, signature } = params;
+      // Extract the key from the URL path
+      const path = window.location.pathname; // e.g., "/verify-registration/NDA:1tREuI:UHFWRgMhr50BaKo-zcmMTeeW4VRyxuLZDLwGNXgED3E/"
+      const key = path.split("/")[2]; // Extract the key from the path
 
       const response = await fetch(`/api/account/verify-registration/`, {
         method: "POST",
@@ -28,9 +28,7 @@ function SignUpConfirmation() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          user_id,
-          timestamp,
-          signature,
+          signature: key, // Pass the extracted key as the signature
         }),
       });
 
@@ -38,7 +36,8 @@ function SignUpConfirmation() {
 
       if (response.status === 200) {
         setSuccessfullyVerified(true);
-        // start countdown timer
+
+        // Start countdown timer
         const timer = setInterval(() => {
           setCountdown((prevCount) => prevCount - 1);
         }, 1000);
@@ -51,11 +50,12 @@ function SignUpConfirmation() {
         setError(data.message || "Verification failed."); // Use the error from the response or a default error message
       }
     } catch (error) {
-
+      setError("An error occurred during verification.");
     }
 
     setIsLoading(false);
   };
+
 
   return (
     <Layout
