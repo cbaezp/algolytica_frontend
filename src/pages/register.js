@@ -202,7 +202,7 @@ const RegisterPage = () => {
                 <FaGithub className="mr-2" />
                 {t('signUpWithGitHub')}
               </button>
-              <button
+              {/* <button
                 type="button"
                 className="w-full flex items-center justify-center py-2 mt-4 rounded-xl bg-gray-800 text-white hover:bg-gray-700"
                 onClick={() => {
@@ -215,7 +215,7 @@ const RegisterPage = () => {
               >
                 <FaGoogle className="mr-2" />
                 {t('signUpWithGoogle')}
-              </button>
+              </button> */}
 
 
               {/* disclaimer */}

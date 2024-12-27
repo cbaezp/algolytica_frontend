@@ -185,13 +185,13 @@ const LoginPage = () => {
 
               {/* Social Login Section */}
               <div className="w-full">
-                <button
+                {/* <button
                   onClick={handleGoogleLogin}
                   className="w-full flex items-center justify-center py-2 mt-4 rounded-xl bg-gray-800 text-white hover:bg-gray-700"
                 >
                   <FaGoogle className="mr-2" />
                   {t("loginWithGoogle")}
-                </button>
+                </button> */}
                 <button
                   onClick={handleGitHubLogin}
                   className="w-full flex items-center justify-center py-2 mt-4 rounded-xl bg-gray-800 text-white hover:bg-gray-700"

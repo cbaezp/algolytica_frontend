@@ -97,14 +97,16 @@ const NavbarLogged = () => {
               <div className="flex h-16 items-center justify-between px-4 sm:px-0">
                 <div className="flex items-center">
                   <div className="flex-shrink-0">
-                    <Image
-                      src={"/images/Logo.svg"}
-                      width={149.6}
-                      height="0"
-                      sizes="100vw"
-                      className="w h-auto"
-                      alt={"logo-Algolytica"}
-                    />
+                    <Link href="/dashboard" passHref>
+                      <Image
+                        src={"/images/Logo.svg"}
+                        width={149.6}
+                        height="0"
+                        sizes="100vw"
+                        className="w h-auto"
+                        alt={"logo-Algolytica"}
+                      />
+                    </Link>
                   </div>
                   <div className="hidden md:block">
                     <div className="ml-10 flex items-baseline space-x-4">
