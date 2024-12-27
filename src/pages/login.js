@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Layout from "../hocs/Layout";
 import { useSelector, useDispatch } from "react-redux";
 import { login } from "../actions/auth";
-import { githubAuth } from "../actions/auth"; // Import the GitHub auth action
+
 
 import { FaGithub, FaGoogle } from "react-icons/fa";
 
@@ -41,22 +41,32 @@ const LoginPage = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    if (dispatch && dispatch !== null && dispatch !== undefined)
-      dispatch(login(username, password));
-    setDataDispatched(true);
-    if (isAuthenticatedCookie === "unauthorized") {
-      setLoginUnsuccessful(true);
+    setLoginUnsuccessful(false); // Reset any previous error messages
+
+    if (dispatch && dispatch !== null && dispatch !== undefined) {
+      dispatch(login(username, password)).then((response) => {
+        // Explicitly set loginUnsuccessful based on the state
+        const isAuthCookie = Cookie.get("isAuthenticated");
+        if (isAuthCookie === "unauthorized") {
+          setLoginUnsuccessful(true);
+        }
+      });
     }
+    setDataDispatched(true);
   };
+
 
   useEffect(() => {
     if (isAuthenticatedCookie === "true" && !loading) {
       setLoginUnsuccessful(false);
       router.push("/dashboard");
+    } else if (isAuthenticatedCookie === "unauthorized") {
+      setLoginUnsuccessful(true);
     } else {
       Cookie.set("isAuthenticated", "false");
     }
-  }, [loginUnsuccessful, isAuthenticatedCookie]);
+  }, [isAuthenticatedCookie, loading]);
+
 
   // Handle GitHub login
   const handleGitHubLogin = () => {
