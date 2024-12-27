@@ -6,13 +6,12 @@ export default async (req, res) => {
     const cookies = cookie.parse(req.headers.cookie ?? "");
     const access = cookies.access ?? false;
     const body = JSON.stringify({
-      old_password: `${req.body.current}`,
-      password: `${req.body.new}`,
-      password_confirm: `${req.body.cofirmation}`,
+      new_password1: `${req.body.new}`,
+      new_password2: `${req.body.cofirmation}`,
     });
 
     try {
-      const apiRes = await fetch(`${API_URL}/account/change-password/`, {
+      const apiRes = await fetch(`${API_URL}/dj-rest-auth/password/change/`, {
         method: "POST",
         headers: {
           Accept: "application/json",

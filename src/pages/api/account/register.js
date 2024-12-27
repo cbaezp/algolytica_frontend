@@ -7,11 +7,11 @@ export default async (req, res) => {
     const body = JSON.stringify({
       username: username,
       email: email,
-      password: password,
-      password_confirm: password_confirm,
+      password1: password,
+      password2: password_confirm,
     });
     try {
-      const apiRes = await fetch(`${API_URL}/account/register/`, {
+      const apiRes = await fetch(`${API_URL}/dj-rest-auth/registration/`, {
         method: "POST",
         headers: {
           Accept: "application/json",

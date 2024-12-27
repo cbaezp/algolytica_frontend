@@ -61,7 +61,6 @@ export default function PasswordUpdate() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const passwordDetails = {
-      current: password,
       new: newPassword,
       cofirmation: confirmPassword,
     };
@@ -188,18 +187,7 @@ export default function PasswordUpdate() {
                             </h3>
                           </div>
                           <div className="mt-5 border-t border-cyan-500/30">
-                            <label className="text-gray-100 text-md">
-                              Current Password
-                            </label>
-                            <input
-                              type="password"
-                              className="block w-full rounded-lg border-cyan-300/50 py-2 px-4 text-white shadow-sm focus:border-cyan-500 focus:ring-cyan-500 bg-[#0f131f] mb-3 mt-2"
-                              name="password"
-                              minLength="8"
-                              value={password}
-                              onChange={(e) => setPassword(e.target.value)}
-                              required
-                            />
+
                             <label className="text-gray-100 text-md">
                               New Password
                             </label>
