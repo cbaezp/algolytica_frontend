@@ -1,22 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 150.6 33">
-  <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 150.6 33">
   <defs>
     <style>
-      .st0, .st1 {
+      .cls-1 {
         isolation: isolate;
       }
 
-      .st1 {
+      .cls-2 {
         fill: #ddd;
-        font-family: Brolink-Regular, Brolink;
-        font-size: 19.5px;
       }
     </style>
   </defs>
-  <g id="Layer_11" data-name="Layer_1">
-    <g class="st0">
-      <text class="st1" transform="translate(0 22.8)"><tspan x="0" y="0">aLGOLYTICa</tspan></text>
+  <!-- Generator: Adobe Illustrator 28.7.3, SVG Export Plug-In . SVG Version: 1.2.0 Build 164)  -->
+  <g>
+    <g id="Layer_1">
+      <g id="Layer_11">
+        <g class="cls-1">
+          <g class="cls-1">
+            <g class="cls-1">
+              <path class="cls-2" d="M7.6,9h3.3l6.6,13.8h-3.5l-4.8-9.9-4.8,9.9H1l6.6-13.8Z"/>
+              <path class="cls-2" d="M31.4,20v2.8h-12v-13.7h3.3v10.9h8.7Z"/>
+              <path class="cls-2" d="M46.1,22.8h-1.3l-.6-1.1c-1.2,1-2.7,1.5-4.5,1.5-3.5,0-7.6-2.5-7.6-7.3s4.1-7.3,7.6-7.3,5.1,1.1,6.5,3l-2.4,2.1c-.9-1.1-2.5-2-4-2-2.9,0-4.4,2-4.4,4.1s1.5,4.1,4.4,4.1,3.1-1.3,3.1-2.7h-3.2v-2h6.4v7.4Z"/>
+              <path class="cls-2" d="M56,23.2c-3.6,0-7.8-2.4-7.8-7.3s4.2-7.3,7.8-7.3,7.8,2.4,7.8,7.3-4.2,7.3-7.8,7.3ZM56,11.8c-2,0-4.4,1.4-4.4,4.2s2.4,4.1,4.4,4.1,4.4-1.3,4.4-4.1-2.4-4.2-4.4-4.2Z"/>
+              <path class="cls-2" d="M78.3,20v2.8h-12v-13.7h3.3v10.9h8.7Z"/>
+              <path class="cls-2" d="M81.1,9.1l3.7,5.6,3.7-5.6h3.8l-5.9,8.2v5.5h-3.3v-5.5l-5.9-8.2h3.8Z"/>
+              <path class="cls-2" d="M108.9,9.1v2.7h-6v10.9h-3.3v-10.9h-6v-2.7h15.2Z"/>
+              <path class="cls-2" d="M110.9,9.1h3.3v13.7h-3.3v-13.7Z"/>
+              <path class="cls-2" d="M124.4,8.7c2.7,0,5.1,1.1,6.5,3l-2.4,2.1c-.9-1.1-2.5-2-4-2-2.9,0-4.4,2-4.4,4.1s1.5,4.1,4.4,4.1,3.1-.9,4-2l2.4,2.1c-1.5,1.9-3.8,3.1-6.6,3.1s-7.6-2.5-7.6-7.3,4.1-7.3,7.6-7.3Z"/>
+              <path class="cls-2" d="M139.4,9h3.3l6.6,13.8h-3.5l-4.8-9.9-4.8,9.9h-3.5l6.6-13.8Z"/>
+            </g>
+          </g>
+        </g>
+      </g>
     </g>
   </g>
 </svg>

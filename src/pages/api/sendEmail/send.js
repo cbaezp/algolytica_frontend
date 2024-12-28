@@ -1,5 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
-import nodemailer from "nodemailer";
+import axios from "axios";
 
 export default async (req, res) => {
   if (req.method !== "POST") {
@@ -13,34 +13,44 @@ export default async (req, res) => {
   }
 
   try {
-    const transporter = nodemailer.createTransport({
-      service: "mailgun",
-      host: "smtp.mailgun.org",
-      port: 465,
-      secure: true,
-      auth: {
-        user: "contact@Algolytica.com",
-        pass: process.env.CONTACT_PASS,
-      },
-    });
+    const brevoApiKey = process.env.BREVO_API_KEY;
+    if (!brevoApiKey) {
+      return res.status(500).json({ message: "Server configuration error" });
+    }
 
-    const mailOptions = {
-      from: "contact@Algolytica.com",
-      to: "support@Algolytica.com",
-      replyTo: email,
+    const requestBody = {
+      sender: {
+        name: "Algolytica",
+        email: "support@algolytica.com",
+      },
+      to: [
+        {
+          email: "support@algolytica.com",
+          name: "Support",
+        },
+      ],
       subject: subject,
-      html: `
-        <h3>Title: ${subject}</h3>
-        <p>From: ${email} | ${name}</p>
-        <p>Message: ${message}</p>
-      `,
+      replyTo: {
+        email: email,
+        name: name || "Anonymous",
+      },
+      textContent: `Title: ${subject}\nFrom: ${email} | ${name}\nMessage: ${message}`,
     };
 
-    await transporter.sendMail(mailOptions);
+    const response = await axios.post(
+      "https://api.brevo.com/v3/smtp/email",
+      requestBody,
+      {
+        headers: {
+          "Content-Type": "application/json",
+          "api-key": brevoApiKey,
+        },
+      }
+    );
 
-    return res.status(200).json({ message: "Email Sent Successfully" });
+    return res.status(200).json({ message: "Email Sent Successfully", data: response.data });
   } catch (error) {
     console.error(error);
-    return res.status(500).json({ message: "Error sending email" });
+    return res.status(500).json({ message: "Error sending email", error: error.response?.data || error.message });
   }
 };
