@@ -313,12 +313,10 @@ export default function Contact() {
                         rows={4}
                         className="block w-full rounded-md border-cyan-300 py-3 px-4 text-white shadow-sm focus:border-cyan-500 focus:ring-cyan-500 bg-[#0f131f]"
                         aria-describedby="message-max"
-                        defaultValue={""}
-                        onChange={(e) => {
-                          setMessage(e.target.value);
-                        }}
+                        onChange={(e) => setMessage(e.target.value)}
                         value={message}
                       />
+
                     </div>
                   </div>
                   <div className="sm:col-span-2 sm:flex sm:justify-end">
