@@ -35,6 +35,7 @@ const ProtectedRoutes = ({ router, children }) => {
     "/gh-redirect",
     "/terms",
     "/privacy",
+    "/wp-admin",
     "/",
     "/maintenance", // Ensure this is included
   ];
