@@ -114,12 +114,25 @@ export default function Footer() {
         />
         <p className="mt-10 text-center text-xs leading-5 text-gray-500">
           This website is exclusively intended for entertainment purposes and
-          does not facilitate any form of actual monetary wagering. Algolytica.com
-          does not engage in the acceptance or placement of bets and is not a
-          gambling platform. &copy; {new Date().getFullYear()} Algolytica. All rights reserved.
-          Crafted by <a href="https://github.com/cbaezp" className="hover:text-cyan-600">cbaezp</a>
+          does not facilitate any form of actual monetary wagering.
+          Algolytica.com does not engage in the acceptance or placement of bets
+          and is not a gambling platform. &copy; {new Date().getFullYear()}{" "}
+          Algolytica. All rights reserved. Crafted by{" "}
+          <a href="https://github.com/cbaezp" className="hover:text-cyan-600">
+            cbaezp
+          </a>
         </p>
-
+        <div className="flex justify-center mt-6">
+          <a href="https://buymeacoffee.com/cbaez">
+            <Image
+              src="/images/buy_me_coffee/black-button.png"
+              className="w-25 h-auto"
+              width={100}
+              height={80}
+              alt="buy a coffee"
+            />
+          </a>
+        </div>
       </div>
     </footer>
   );
